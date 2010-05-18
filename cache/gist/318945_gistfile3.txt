@@ -1,0 +1,7 @@
+document.write('<link rel="stylesheet" href="http://gist.github.com/stylesheets/gist/embed.css"/>')
+
+
+
+
+
+document.write('<div id=\"gist-318945\" class=\"gist\">\n  \n  \n    \n            \n            \n            \n\n      <div class=\"gist-file\">\n        <div class=\"gist-data gist-syntax\">\n          \n          \n          \n            <div class=\"gist-highlight\"><pre><div class=\"line\" id=\"LC1\">upstream give_proxy_a_name {<\/div><div class=\"line\" id=\"LC2\">server 127.0.0.1:8000;<\/div><div class=\"line\" id=\"LC3\">server 127.0.0.1:8001;<\/div><div class=\"line\" id=\"LC4\">}<\/div><\/pre><\/div>\n          \n        <\/div>\n\n        <div class=\"gist-meta\">\n          <a href=\"http://gist.github.com/raw/318945/06d382b4051404f5db51b4d2cdf0af1f25e478c7/gistfile3.txt\" style=\"float:right;\">view raw<\/a>\n          <a href=\"http://gist.github.com/318945#file_gistfile3.txt\" style=\"float:right;margin-right:10px;color:#666\">gistfile3.txt<\/a>\n          <a href=\"http://gist.github.com/318945\">This Gist<\/a> brought to you by <a href=\"http://github.com\">GitHub<\/a>.\n        <\/div>\n      <\/div>\n    \n            \n            \n            \n            \n            \n  \n<\/div>\n')

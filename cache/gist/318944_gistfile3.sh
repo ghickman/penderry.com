@@ -1,0 +1,7 @@
+document.write('<link rel="stylesheet" href="http://gist.github.com/stylesheets/gist/embed.css"/>')
+
+
+
+
+
+document.write('<div id=\"gist-318944\" class=\"gist\">\n  \n  \n    \n            \n            \n            \n            \n\n      <div class=\"gist-file\">\n        <div class=\"gist-data gist-syntax\">\n          \n          \n          \n            <div class=\"gist-highlight\"><pre><div class=\"line\" id=\"LC1\"><span class=\"nb\">cd<\/span> ~<\/div><div class=\"line\" id=\"LC2\">mkdir sources<\/div><div class=\"line\" id=\"LC3\"><span class=\"nb\">cd <\/span>sources<\/div><div class=\"line\" id=\"LC4\">wget http://sysoev.ru/nginx/nginx-0.6.31.tar.gz<\/div><div class=\"line\" id=\"LC5\">tar xvzf nginx-0.6.31.tar.gz<\/div><div class=\"line\" id=\"LC6\"><span class=\"nb\">cd <\/span>nginx-0.6.31<\/div><\/pre><\/div>\n          \n        <\/div>\n\n        <div class=\"gist-meta\">\n          <a href=\"http://gist.github.com/raw/318944/92400969639e1b99a36998a8122c5f6cdf60b71c/gistfile3.sh\" style=\"float:right;\">view raw<\/a>\n          <a href=\"http://gist.github.com/318944#file_gistfile3.sh\" style=\"float:right;margin-right:10px;color:#666\">gistfile3.sh<\/a>\n          <a href=\"http://gist.github.com/318944\">This Gist<\/a> brought to you by <a href=\"http://github.com\">GitHub<\/a>.\n        <\/div>\n      <\/div>\n    \n            \n            \n            \n            \n            \n            \n  \n<\/div>\n')

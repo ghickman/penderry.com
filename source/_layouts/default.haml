@@ -1,0 +1,22 @@
+!!!
+%html
+  %head
+    %title Penderry Farm
+  
+    %link{:rel=>'stylesheet', :type=>'text/css', :href=>'/stylesheets/master.css'}
+    %script{:type=>'text/javascript', :src=>'/javascript/jquery.js'}
+  %body
+    #header
+    #menu
+      %ul
+        %li#home.menu_item <a href="/">Home</a>
+        %li#holiday_cottages.menu_item <a href="/holiday_cottages.html">Holiday Cottages</a>
+        %li#things_to_do.menu_item <a href="/things_to_do.html">Things To Do</a>
+        %li#farm_and_habitats.menu_item <a href="/farm_and_habitats.html">Farm and Habitats</a>
+        %li#art_projects.menu_item <a href="/art_projects.html">Art Projects</a>
+        %li#tina_lewis_paintings.menu_item <a href="/tina_lewis_paintings.html">Tina Lewis&#039; Paintings</a>
+        %li#contact.menu_item <a href="/contact.html">Contact Us</a>
+
+    #content== #{content}
+    #footer
+      %p Created by <a href="http://ghickman.co.uk">George Hickman</a>
