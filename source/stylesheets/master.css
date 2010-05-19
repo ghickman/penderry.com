@@ -144,25 +144,19 @@ input.submit {
 /** FOOTER */
 #footer {
 	background: #6ebe7a;
-	height: 20px;
+	height: 30px;
 	margin: 10px 0 0;
-	text-align: center;
 }
 
-#footer p {
+#created-by {
 	color: #FFF;
 	display: inline;
 	float: right;
-	margin: 3px 10px 0 0;
+	margin: 7px 10px 0 0;
 }
 
-#footer a {
+#created-by a {
     color: #FFF;
-    text-decoration: none;
-}
-
-#footer #admin_info {
-    float: left;
-    margin: 0 0 0 10px;
+    text-decoration: underline;
 }
 /*--------------------------------------------------------------------------**/
