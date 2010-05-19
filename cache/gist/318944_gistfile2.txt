@@ -1,7 +1,0 @@
-document.write('<link rel="stylesheet" href="http://gist.github.com/stylesheets/gist/embed.css"/>')
-
-
-
-
-
-document.write('<div id=\"gist-318944\" class=\"gist\">\n  \n  \n    \n            \n            \n            \n\n      <div class=\"gist-file\">\n        <div class=\"gist-data gist-syntax\">\n          \n          \n          \n            <div class=\"gist-highlight\"><pre><div class=\"line\" id=\"LC1\">http {<\/div><div class=\"line\" id=\"LC2\">&nbsp;......<\/div><div class=\"line\" id=\"LC3\">&nbsp;server {<\/div><div class=\"line\" id=\"LC4\">&nbsp;......<\/div><div class=\"line\" id=\"LC5\">&nbsp;}<\/div><div class=\"line\" id=\"LC6\">&nbsp;include /etc/nginx/sites-enabled/*;<\/div><div class=\"line\" id=\"LC7\">}<\/div><\/pre><\/div>\n          \n        <\/div>\n\n        <div class=\"gist-meta\">\n          <a href=\"http://gist.github.com/raw/318944/80d1a2f3461ed25a408ce7aeea3d6649c1e1ca58/gistfile2.txt\" style=\"float:right;\">view raw<\/a>\n          <a href=\"http://gist.github.com/318944#file_gistfile2.txt\" style=\"float:right;margin-right:10px;color:#666\">gistfile2.txt<\/a>\n          <a href=\"http://gist.github.com/318944\">This Gist<\/a> brought to you by <a href=\"http://github.com\">GitHub<\/a>.\n        <\/div>\n      <\/div>\n    \n            \n            \n            \n            \n            \n            \n            \n  \n<\/div>\n')
