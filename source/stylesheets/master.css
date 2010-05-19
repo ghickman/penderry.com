@@ -102,10 +102,33 @@ tr.thumbs td a img {
 
 
 /** CONTACT */
+#contact-info, #contact-form {
+    margin: 10px 0 0;
+}
+
+/** Contact Info */
+#contact-info {
+    float: left;
+    margin-left: 20px;
+    width: 35%;
+}
+
+#contact-info p, #contact-info li {
+    font-size: 14px;
+}
+
+#contact-info p {
+    margin: 0 0 30px;
+    text-align: center;
+}
+
+/*--------------**/
+
+/** Contact Form */
 #contact-form {
-    margin: 30px auto;
-    padding: 0 85px 0 0;
-    width: 65%;
+    float: right;
+    margin: 10px auto;
+    width: 60%;
 }
 
 label {
@@ -133,10 +156,11 @@ input.submit {
     border: 2px solid #6ebe7a;
 	float: right;
 	font-size: 110%;
-	margin: 10px 50px 0 0;
+	margin: 10px 35px 0 0;
 	padding: 2px 5px;
 	width: auto;
 }
+/*--------------**/
 /*--------------------------------------------------------------------------**/
 
 

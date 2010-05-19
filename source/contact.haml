@@ -3,6 +3,16 @@ layout: default
 body_id: contact
 title: Contact
 ---
+#contact-info
+  %p Please use the contact form to send us any questions you might have.
+  
+  %p Bookings can be made with our agency Somebody Cottage solutions. They are available on:
+  %ul
+    %li 01834 xxxxxx 
+  %p or
+  %ul
+    %li cottages - [at] - somebody dot co dot uk
+
 %form{:action=>"/contact", :method=>"post", :id=>"contact-form"}
   .name
     %label{:for=>"name"} Name
@@ -15,4 +25,5 @@ title: Contact
     %textarea{:class=>"message", :rows=>"6", :cols=>"30"}
   .submit
     %input{:type=>"submit", :class=>"submit", :value=>"Send"}
-  .clr
+
+.clr
