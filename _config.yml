@@ -3,7 +3,6 @@ haml:
 markdown: rdiscount
 source: source
 destination: site
-gist_cache: ./cache/gist
 
 permalink: /:title.html
-blog_title: Penderry
+blog_title: Penderry Farm
