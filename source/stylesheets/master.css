@@ -25,11 +25,11 @@ html, body {height: 100%}
 
 /** MAIN */
 html, body {
-    font-size   : 13px;
-    font-family : "Arial", "Helvetica";
-	text-align	: justify;
-	width		: 1000px;
-	margin 		: auto;
+    font-size: 13px;
+    font-family: "Arial", "Helvetica";
+    margin: auto;
+	text-align: justify;
+	width: 1000px;
 }
 /*--------------------------------------------------------------------------**/
 
@@ -37,10 +37,10 @@ html, body {
 
 /** HEADER */
 #header {
-	height		: 150px;
-	margin 		: auto;
-	background  : url(/images/header.jpg) no-repeat  center center;
-	padding 	: 10px 0 10px 0;
+	background: url(/images/header.jpg) no-repeat center center;
+	height: 150px;
+	margin: auto;
+	padding: 10px 0;
 }
 /*--------------------------------------------------------------------------**/
 
@@ -74,7 +74,7 @@ html, body {
 #menu a:hover, #home #home a, #holiday_cottages #holiday_cottages a,
 #things_to_do #things_to_do a, #farm_and_habitats #farm_and_habitats a,
 #art_projects #art_projects a, #tina_lewis_paintings #tina_lewis_paintings a,
-#contact #contact a {background : url(/images/menu_hover.png) repeat-x center center;}
+#contact #contact a {background: url(/images/menu_hover.png) repeat-x center center;}
 /*--------------------------------------------------------------------------**/
 
 
@@ -82,8 +82,8 @@ html, body {
 /** FORMS */
 #ContactAddForm {
     margin: 30px auto;
-    width: 65%;
     padding: 0 85px 0 0;
+    width: 65%;
 }
 
 .input {
@@ -92,9 +92,9 @@ html, body {
 
 .input label{
     float: left;
-    width: 125px;
     padding: 2px 7px 0 0;
     text-align: right;
+    width: 125px;
 }
 
 .input input {
@@ -102,22 +102,22 @@ html, body {
 }
 
 .input input, .input textarea {
-    width: 70%;
     border: 2px solid #6ebe7a;
-    padding: 3px;
+    float: none;
     font-family: "Frutiger Linotype", "Lucida Grande", Verdana, sans-serif;
     font-size: 80%;
-    float: none;
+    padding: 3px;
+    width: 70%;
 }
 
 input[type="submit"] {
-    border: 2px solid #6ebe7a;
     background-color: #fff;
+    border: 2px solid #6ebe7a;
+	float: right;
 	font-size: 110%;
+	margin: 10px 50px 0 0;
 	padding: 2px 5px;
 	width: auto;
-	float: right;
-	margin: 10px 50px 0 0;
 }
 
 .error-message {
@@ -126,42 +126,6 @@ input[type="submit"] {
     margin: -34px -190px 0 0;
     width: 230px;
 }
-
-/*form {
-	clear 		: both;
-	margin-right: 20px;
-	padding 	: 0;
-}
-
-form div {
-/*  clear       : both;
-	margin-bottom: 1em;
-	padding 	: 0.5em;
-	vertical-align: text-top;
-}
-
-form div.input {
-	color 		: #444;
-}
-
-form div.submit {
-	border 		: 0 none;
-	clear 		: both;
-	width		: 40px;
-	margin-left : 0px;
-	margin-top  : 10px;
-}
-
-input, textarea {
-	clear 		: both;
-	display 	: block;
-	font-family : "frutiger linotype","lucida grande","verdana",sans-serif;
-	font-size 	: 100%;
-	padding 	: 2px;
-	width 		: 100%;
-}
-
-
 /*--------------------------------------------------------------------------**/
 
 
@@ -172,17 +136,18 @@ h2 {
 }
 
 #content {
-	margin: 0 10px 0 10px;
 	font: 13pt "Arial", "Helvetica", Verdana, sans-serif;
+	margin: 0 10px 0 10px;
+	
 }
 
 .message {
-    border: 3px solid #5B9C65;
     background: #6ebe7a;
+    border: 3px solid #5B9C65;
     color: #fff;
-    padding: 10px;
     font-weight: bold; 
     margin: 15px 0;
+    padding: 10px;
     text-align: center;
 }
 
@@ -199,22 +164,21 @@ tr.thumbs td a img {
 
 /** FOOTER */
 #footer {
-    height: 20px;
 	background: #6ebe7a;
+	height: 20px;
+	margin: 10px 0 0;
 	text-align: center;
-	margin-top: 10px;
 }
 
 #footer p {
-	font-size: 10px;
-	display: inline;
 	color: #FFF;
+	display: inline;
 	float: right;
 	margin: 3px 10px 0 0;
 }
 
 #footer a {
-    color       : #FFF;
+    color: #FFF;
     text-decoration: none;
 }
 
