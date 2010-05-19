@@ -1,0 +1,18 @@
+---
+layout: default
+body_id: contact
+title: Contact
+---
+%form{:action=>"/contact", :method=>"post", :id=>"contact-form"}
+  .name
+    %label{:for=>"name"} Name
+    %input{:type=>"text", :class=>"name"}
+  .email
+    %label{:for=>"email"} Email
+    %input{:type=>"text", :class=>"email"}
+  .message
+    %label{:for=>"message"} Message
+    %textarea{:class=>"message", :rows=>"6", :cols=>"30"}
+  .submit
+    %input{:type=>"submit", :class=>"submit", :value=>"Send"}
+  .clr

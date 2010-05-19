@@ -79,57 +79,6 @@ html, body {
 
 
 
-/** FORMS */
-#ContactAddForm {
-    margin: 30px auto;
-    padding: 0 85px 0 0;
-    width: 65%;
-}
-
-.input {
-/*    border: 2px solid #6ebe7a;*/
-}
-
-.input label{
-    float: left;
-    padding: 2px 7px 0 0;
-    text-align: right;
-    width: 125px;
-}
-
-.input input {
-    margin: 0 0 10px;
-}
-
-.input input, .input textarea {
-    border: 2px solid #6ebe7a;
-    float: none;
-    font-family: "Frutiger Linotype", "Lucida Grande", Verdana, sans-serif;
-    font-size: 80%;
-    padding: 3px;
-    width: 70%;
-}
-
-input[type="submit"] {
-    background-color: #fff;
-    border: 2px solid #6ebe7a;
-	float: right;
-	font-size: 110%;
-	margin: 10px 50px 0 0;
-	padding: 2px 5px;
-	width: auto;
-}
-
-.error-message {
-    color: #F00;
-    float: right;
-    margin: -34px -190px 0 0;
-    width: 230px;
-}
-/*--------------------------------------------------------------------------**/
-
-
-
 /** CONTENT */
 h2 {
 	margin: 10px 0 0 0;
@@ -141,22 +90,52 @@ h2 {
 	
 }
 
-.message {
-    background: #6ebe7a;
-    border: 3px solid #5B9C65;
-    color: #fff;
-    font-weight: bold; 
-    margin: 15px 0;
-    padding: 10px;
-    text-align: center;
-}
-
 table#pictures {
     margin-left: 132px;
 }
 
 tr.thumbs td a img {
     margin-left: 5px;
+}
+/*--------------------------------------------------------------------------**/
+
+
+
+/** CONTACT */
+#contact-form {
+    margin: 30px auto;
+    padding: 0 85px 0 0;
+    width: 65%;
+}
+
+label {
+    float: left;
+    padding: 2px 7px 0 0;
+    text-align: right;
+    width: 125px;
+}
+
+input {
+    margin: 0 0 10px;
+}
+
+input, textarea {
+    border: 2px solid #6ebe7a;
+    float: none;
+    font-family: "Frutiger Linotype", "Lucida Grande", Verdana, sans-serif;
+    font-size: 80%;
+    padding: 3px;
+    width: 70%;
+}
+
+input.submit {
+    background-color: #fff;
+    border: 2px solid #6ebe7a;
+	float: right;
+	font-size: 110%;
+	margin: 10px 50px 0 0;
+	padding: 2px 5px;
+	width: auto;
 }
 /*--------------------------------------------------------------------------**/
 
