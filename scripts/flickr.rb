@@ -1,33 +1,27 @@
 require 'rubygems'
-require 'time'
-require 'patron'
-require 'nokogiri'
+require 'flickraw'
 
-# Setup where we're saving the output.
-filename = File.join(
-  File.dirname(__FILE__), '..', 'source', '_includes', 'flickr.html')
-# Setup http session stuff.
-sess = Patron::Session.new
-sess.timeout = 30
-sess.base_url = 'http://api.flickr.com'
-sess.headers['If-Modified-Since'] = File.mtime(filename) if File.exists?(filename)
-resp = sess.get '/services/feeds/photos_public.gne?id=39828812@N00&tags=27s&lang=en-us&format=rss_200'
+API_KEY = 'a3ced0126afc4d7ddbd0e8ebc4de69d4'
+SECRET = '2f39974c7de33f63'
+TOKEN = '72157624167102370-d764b407cec94c42'
+ID = '30170921@N04' #lewispenderry
+SET = '72157624036028179'
 
-if resp.status == 200
-  doc = Nokogiri::XML(resp.body)
-  File.open(filename, 'w') do |f|
-    f.puts '<div class="flickr_photos">'
+FlickRaw.api_key = API_KEY
+FlickRaw.shared_secret = SECRET
 
-    doc.xpath('.//item').sort_by { rand }.slice(0..5).each do |item|
-      thumbnail =  item.at_xpath('media:thumbnail')['url']
-      link = item.at_xpath('link').text
-      title = item.at_xpath('title').text
+auth = flickr.auth.checkToken :auth_token => TOKEN
 
-      f.puts %Q{<span class="flickr_image"><a href="#{link}" title="#{title}"><img src="#{thumbnail}" alt="#{title}" /></a></span>}
-    end
+filename = File.join(File.dirname(__FILE__), '..', 'source', '_includes', 'artwork.html')
 
-    f.puts '</div>'
+File.open(filename, 'w') do |f|
+  f.puts '<div class="flickr_photos">'
+  
+
+  @photos = flickr.photosets.getPhotos(:photoset_id =>SET, :privacy_filter=>'5')
+  @photos.photo.each do |photo|
+    f.puts %Q{<img src="#{FlickRaw.url_m(photo)}" alt="#{photo.title}" />}
   end
-  mtime = Time.httpdate(resp.headers['Last-Modified'])
-  File.utime(mtime, mtime, filename)
+  
+  f.puts '</div>'
 end
