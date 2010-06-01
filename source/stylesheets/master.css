@@ -196,30 +196,24 @@ tr.thumbs td a img {
 
 /** Contact Info */
 #contact-info {
-    float: left;
-    margin-left: 20px;
-    width: 35%;
-}
-
-#contact-info p, #contact-info li {
-    font-size: 14px;
+    margin: 0 20px;
 }
 
 #contact-info p {
+    font-size: 14px;
     line-height: 2em;
-    margin: 100px 0 0;
-    text-align: left;
+    padding: 5px 0 0;
 }
 /*--------------**/
 
 /** Contact Form */
 #contact-form {
-    float: right;
-    width: 600px;
+    margin: 0 auto;
+    width: 800px;
 }
 
 #contact-form form {
-    margin: 0 20px 0;
+    margin: 0 130px 0 0;
 }
 
 .row {
@@ -240,7 +234,7 @@ tr.thumbs td a img {
     border: 2px solid #6ebe7a;
     font-size: 18px;
     padding: 3px;
-    width: 400px;
+    width: 500px;
 }
 
 #contact-form input[type="text"] {

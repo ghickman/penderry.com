@@ -2,7 +2,7 @@
   %p Please use the contact form to send us any questions, or call us on 01834 831327
 
 #contact-form
-  %form{:action=>"/contact", :method=>"post", :class=>"right"}
+  %form{:action=>"/contact", :method=>"post"}
     .name.row
       %label{:for=>"name"} Name:
       %input{:type=>"text", :name=>"name", :id=>"name", :class=>('error' if !@errors[:name].nil?)}
