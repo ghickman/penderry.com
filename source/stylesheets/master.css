@@ -189,6 +189,31 @@ tr.thumbs td a img {
 
 
 
+/** ART PROJECTS */
+img.art {
+    margin: 0 0 10px;
+}
+
+img.art.left {
+    margin-right: 10px;
+}
+
+img.art.right {
+    margin-left: 10px;
+}
+
+.outside {
+    width: 235px;
+    height: 180px;
+}
+
+p.art {
+   padding: 50px 0 0; 
+}
+/*--------------------------------------------------------------------------**/
+
+
+
 /** CONTACT */
 #contact-info, #contact-form {
     margin: 10px 0 0;
