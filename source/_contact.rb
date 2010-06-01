@@ -13,9 +13,14 @@ helpers do
   end
 end
 
+before do
+  @page = OpenStruct.new(:body => 'contact')
+end
+
 get '/contact' do
+  @page = OpenStruct.new
   @errors={}
-  haml :contact
+  haml :contact, :locals =>{page => @page}
 end
 
 post '/contact' do
