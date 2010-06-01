@@ -286,7 +286,7 @@ p.art {
     float: right;
     margin: 0;
     padding: 0 5px;
-    width: 400px;
+    width: 500px;
 }
 
 #contact-form input.error, #contact-form textarea.error {
@@ -295,7 +295,6 @@ p.art {
 
 div.error {
     background-color: #c20015;
-/*    background-color: red;*/
 }
 
 .error p {
