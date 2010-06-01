@@ -8,19 +8,18 @@ set :public, File.dirname(__FILE__)
 set :views, File.dirname(__FILE__) + '/_includes'
 
 helpers do
+  def page
+    OpenStruct.new(:body => 'contact')
+  end
+  
   def partial(page, options={})
     haml page, options.merge!(:layout => false)
   end
 end
 
-before do
-  @page = OpenStruct.new(:body => 'contact')
-end
-
 get '/contact' do
-  @page = OpenStruct.new
   @errors={}
-  haml :contact, :locals =>{page => @page}
+  haml :contact, :locals =>{:page => @page}
 end
 
 post '/contact' do
