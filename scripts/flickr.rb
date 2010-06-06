@@ -33,3 +33,6 @@ File.open(filename, 'w') do |f|
   f.puts '<div class="clr"></div>'
   f.puts '</div>'
 end
+
+mtime = Time.new
+File.utime(mtime, mtime, filename)
