@@ -216,17 +216,8 @@ p.art {
 
 /** TINA LEWIS PAINTINGS */
 .painting {
-/*    border: 1px solid black;*/
     float: left;
-/*    line-height: 240px;*/
-    height: 240px;
-    margin: 2px 2px;
-    text-align: center;
-    width: 240px;
-}
-
-.painting img {
-    vertical-align: middle;
+    margin: 3px 3px;
 }
 /*--------------------------------------------------------------------------**/
 

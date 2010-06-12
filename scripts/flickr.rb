@@ -27,7 +27,12 @@ File.open(filename, 'w') do |f|
 
   @photos = flickr.photosets.getPhotos(:photoset_id =>SET, :privacy_filter=>'5')
   @photos.photo.each do |photo|
-    f.puts %Q{<div class="painting"><img src="#{FlickRaw.url_m(photo)}" alt="#{photo.title}" /></div>}
+    f.puts %Q{<div class="painting">
+      <a href="#{FlickRaw.url(photo)}" rel="lightbox[gallery]">
+        <img src="#{FlickRaw.url_s(photo)}" alt="#{photo.title}" />
+      </a>
+    </div>}
+        
   end
   
   f.puts '<div class="clr"></div>'
