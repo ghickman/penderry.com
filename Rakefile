@@ -9,6 +9,6 @@ task :flickr do
 end
 
 file '_site/index.html' => FileList['source/_includes/*.html'] do
-  sh '/usr/bin/jekyll'
+  sh '/opt/rubyee/bin/jekyll'
 end
 task :jekyll => '_site/index.html'
