@@ -35,7 +35,7 @@ post '/contact' do
   @errors[:message] = 'Please enter your message' if params[:message].nil? || params[:message].empty?
 
   if @errors.empty?
-    Pony.mail(:to=>'contact@penderry.com', :from=>"#{params[:mail]}", :subject=>"Message from: #{params[:name]}", :body=>"#{params[:message]}")
+    Pony.mail(:to=>'contact@penderry.com', :from=>"#{params[:mail]}", :subject=>"Penderry.com Message from: #{params[:name]}", :body=>"#{params[:message]}")
     redirect '/index.html'
   else
     contact
