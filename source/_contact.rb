@@ -2,36 +2,42 @@ require 'rubygems'
 require 'sinatra'
 require 'pony'
 require 'haml'
-require 'ostruct'
 
+set :haml, {:format => :html5}
 set :public, File.dirname(__FILE__)
-set :views, File.dirname(__FILE__) + '/_includes'
+set :views, File.dirname(__FILE__)
 
-helpers do
-  def page
-    OpenStruct.new(:body => 'contact')
+# Create the page class and give it a title of Contact for the layout
+class Page
+  def body
+    'contact'
   end
-  
-  def partial(page, options={})
-    haml page, options.merge!(:layout => false)
-  end
+end
+
+def contact
+  # create the variables that the layout will expect
+  page = Page.new
+  content = haml :contact
+
+  # render the contact page using jekyll's layout and with our mock jekyll vars
+  haml :contact, :layout=>:'_layouts/default', :locals=>{:page=>page, :content=>content}
 end
 
 get '/contact' do
   @errors={}
-  haml :contact, :locals =>{:page => @page}
+  contact
 end
 
 post '/contact' do
   @errors={}
-  @errors[:name] = 'Please type your name' if params[:name].nil? || params[:name].empty?
+  @errors[:name] = 'Please enter your name' if params[:name].nil? || params[:name].empty?
   @errors[:mail] = 'Please leave your email so we can reply to you' if params[:mail].nil? || params[:mail].empty?
-  @errors[:message] = 'Please type your message' if params[:message].nil? || params[:message].empty?
-  
+  @errors[:message] = 'Please enter your message' if params[:message].nil? || params[:message].empty?
+
   if @errors.empty?
-    Pony.mail(:to=>'cottages@penderry.com', :from=>"#{params[:mail]}", :subject=>"#{params[:subject]}", :body=>"#{params[:message]}")
-    redirect 'http://localhost:4001/index.html'
+    Pony.mail(:to=>'contact@penderry.com', :from=>"#{params[:mail]}", :subject=>"Message from: #{params[:name]}", :body=>"#{params[:message]}")
+    redirect '/index.html'
   else
-    haml :contact, :locals => {:page => @page}
+    contact
   end
 end

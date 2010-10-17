@@ -16,7 +16,7 @@
     - if !@errors[:mail].nil?
       .error
         %p=@errors[:mail]
-  
+
     .message.row
       %label{:for=>"message"} Message:
       %textarea{:id=>"message", :name=>"message", :class=>('error' if !@errors[:message].nil?)}
@@ -24,7 +24,7 @@
       .error
         %p=@errors[:message]
     .clr
-  
+
     %input{:type=>"submit", :class=>"submit", :value=>"Send"}
 
 .clr
@@ -32,10 +32,10 @@
 #location
   #address
     %p Penderry, Lampeter-Velfrey, Whitland, Pembrokeshire, Wales SA34 0RB
-  
+
   #map.left
     <iframe width="560" height="480" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://maps.google.co.uk/maps/ms?ie=UTF8&amp;hl=en&amp;msa=0&amp;msid=100510412105125029988.000487f4bc7945f151574&amp;ll=51.837475,-4.633484&amp;spn=0.814611,1.538086&amp;z=9&amp;output=embed"></iframe><br /><small>View <a href="http://maps.google.co.uk/maps/ms?ie=UTF8&amp;hl=en&amp;msa=0&amp;msid=100510412105125029988.000487f4bc7945f151574&amp;ll=51.837475,-4.633484&amp;spn=0.814611,1.538086&amp;z=9&amp;source=embed" style="color:#0000FF;text-align:left">Penderry Farm</a> in a larger map</small>
-  
+
   #directions.right
     %p.right London to Whitland using the M4 and the A40 takes around 4 hours.
     %p.right Take the left turn into Whitland from the roundabout on the A40, then another left into the High Street signed "To Tavernspite" - B4328.
