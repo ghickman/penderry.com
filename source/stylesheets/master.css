@@ -306,12 +306,8 @@ p.art {
     border-color: #c20015;
 }
 
-div.error {
-    background-color: #c20015;
-}
-
 .error p {
-    color: white;
+    color: #c20015;
     margin: 2px;
     padding: 0;
     text-align: center;
