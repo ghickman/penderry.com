@@ -1,5 +1,40 @@
-= include 'header.haml'
+!!!
+%html
+  %head
+    %title Penderry Farm
 
-#content== #{content}
+    %link{:rel=>'stylesheet', :type=>'text/css', :href=>'/stylesheets/master.css'}
+    %link{:rel=>'stylesheet', :type=>'text/css', :href=>'/stylesheets/lightbox.css'}
 
-= include 'footer.haml'
+    %script{:type=>'text/javascript', :src=>'/javascript/jquery.js'}
+    %script{:type=>'text/javascript', :src=>'/javascript/prototype.js'}
+    %script{:type=>'text/javascript', :src=>'/javascript/scriptaculous.js?effects,builder'}
+    %script{:type=>'text/javascript', :src=>'/javascript/lightbox.js'}
+  %body{:id=>"#{page.body}"}
+    #header
+    #menu
+      %ul
+        %li#home.menu_item <a href="/">Home</a>
+        %li#cottages.menu_item <a href="/holiday_cottages.html">Holiday Cottages</a>
+        %li#things.menu_item <a href="/things_to_do.html">Things To Do</a>
+        %li#farm.menu_item <a href="/farm_and_habitats.html">Farm and Habitats</a>
+        %li#art.menu_item <a href="/art_projects.html">Art Projects</a>
+        %li#paintings.menu_item <a href="/tina_lewis_paintings.html">Tina Lewis&#039; Paintings</a>
+        %li#contact.menu_item <a href="/contact">Contact Us</a>
+
+    #content== #{content}
+
+    #footer
+      %p#created-by Created by <a href="http://ghickman.co.uk">George Hickman</a>
+
+    <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-19161009-1']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+    </script>
