@@ -70,7 +70,7 @@ p {
 
 /** HEADER */
 #header {
-  background: url(/images/header.jpg) no-repeat center center;
+  background: url(https://s3-eu-west-1.amazonaws.com/penderry/header.jpg) no-repeat center center;
   height: 150px;
   margin: auto;
   padding: 10px 0;
