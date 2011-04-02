@@ -1,6 +1,6 @@
 /** RESET FOR CSS */
 * {
-	padding:0;
+  padding:0;
     margin:0;
 }
 
@@ -29,8 +29,8 @@ html, body {
     font-family: "Helvetica", "sans-serif";
     line-height: 1.5em;
     margin: auto;
-	text-align: justify;
-	width: 1000px;
+  text-align: justify;
+  width: 1000px;
 }
 
 h1 {
@@ -70,10 +70,10 @@ p {
 
 /** HEADER */
 #header {
-	background: url(/images/header.jpg) no-repeat center center;
-	height: 150px;
-	margin: auto;
-	padding: 10px 0;
+  background: url(/images/header.jpg) no-repeat center center;
+  height: 150px;
+  margin: auto;
+  padding: 10px 0;
 }
 /*--------------------------------------------------------------------------**/
 
@@ -81,27 +81,27 @@ p {
 
 /** MENU */
 #menu ul {
-	background: url(/images/menu_banner.png) repeat-x center center;
-	height: 30px;
-	margin: 0 0 10px 0;
+  background: url(/images/menu_banner.png) repeat-x center center;
+  height: 30px;
+  margin: 0 0 10px 0;
 }
 
 .menu_item {
-	display: inline;
-	float: left;
-	height: 30px;
-	list-style: none;
-	margin: 5px 0px 0px 21px;
+  display: inline;
+  float: left;
+  height: 30px;
+  list-style: none;
+  margin: 5px 0px 0px 21px;
 }
 
 .menu_item a {
-	color: #FFF;
-	font-weight: bold;
-	font-size: 16px;
-	margin: 0px 0 0 0;
-	padding: 7px 5px 5px 5px;
-	text-transform: capitalize;
-	text-decoration: none;
+  color: #FFF;
+  font-weight: bold;
+  font-size: 16px;
+  margin: 0px 0 0 0;
+  padding: 7px 5px 5px 5px;
+  text-transform: capitalize;
+  text-decoration: none;
 }
 
 #menu a:hover, #home #home a, #cottages #cottages a, #things #things a,
@@ -114,7 +114,7 @@ p {
 
 /** CONTENT */
 #content {
-	margin: 0 10px 0 10px;	
+  margin: 0 10px 0 10px;  
 }
 
 table#pictures {
@@ -287,9 +287,9 @@ p.art {
     background-color: #fff;
     border: 2px solid #6ebe7a;
     float: right;
-	font-size: 110%;
-	margin: 10px 0 0;
-	padding: 2px 5px;
+  font-size: 110%;
+  margin: 10px 0 0;
+  padding: 2px 5px;
     width: auto;
 }
 /*--------------**/
@@ -340,16 +340,16 @@ p.art {
 
 /** FOOTER */
 #footer {
-	background: #6ebe7a;
-	height: 30px;
-	margin: 10px 0 0;
+  background: #6ebe7a;
+  height: 30px;
+  margin: 10px 0 0;
 }
 
 #created-by {
-	color: #FFF;
-	display: inline;
-	float: right;
-	margin: 4px 10px 0 0;
+  color: #FFF;
+  display: inline;
+  float: right;
+  margin: 4px 10px 0 0;
 }
 
 #created-by a {
