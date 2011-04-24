@@ -1,4 +1,4 @@
-/** RESET FOR CSS */
+/* RESET FOR CSS */
 * {
   padding:0;
   margin:0;
@@ -19,11 +19,9 @@ a img{ border:none; }
 /* mac hide\*/
 html, body {height: 100%}
 /* end hide */
-/*--------------------------------------------------------------------------**/
 
 
-
-/** MAIN */
+/* MAIN */
 html, body {
   font-size: 15px;
   font-family: "Helvetica", "sans-serif";
@@ -37,14 +35,10 @@ h1 {
   font-size: 20px;
   margin: 30px 0 0;
 }
-
 h2 {
   font-size: 18px;
   margin: 10px 0 0;
 }
-
-h3 {}
-
 h4 {
   font-size: 16px;
   font-weight: bold;
@@ -55,8 +49,6 @@ h5 {
   font-weight: bold;
 }
 
-h6 {}
-
 p {
   padding: 0 0 20px;
 }
@@ -64,22 +56,18 @@ p {
 #overlay{
   width: 100% !important;
 }
-/*--------------------------------------------------------------------------**/
 
 
-
-/** HEADER */
+/* HEADER */
 #header {
   background: url(https://s3-eu-west-1.amazonaws.com/penderry/header.jpg) no-repeat center center;
   height: 150px;
   margin: auto;
   padding: 10px 0;
 }
-/*--------------------------------------------------------------------------**/
 
 
-
-/** MENU */
+/* MENU */
 #menu ul {
   background: url(/images/menu_banner.png) repeat-x center center;
   height: 30px;
@@ -108,11 +96,9 @@ p {
 #farm #farm a, #art #art a, #paintings #paintings a, #contact #contact a {
   background: url(/images/menu_hover.png) repeat-x top center;
 }
-/*--------------------------------------------------------------------------**/
 
 
-
-/** CONTENT */
+/* CONTENT */
 #content {
   margin: 0 10px 0 10px;
 }
@@ -124,19 +110,15 @@ table#pictures {
 tr.thumbs td a img {
   margin-left: 5px;
 }
-/*--------------------------------------------------------------------------**/
 
 
-
-/** HOME */
+/* HOME */
 #slate {
   margin: 0 0 0 17px;
 }
-/*--------------------------------------------------------------------------**/
 
 
-
-/** HOLIDAY COTTAGES */
+/* HOLIDAY COTTAGES */
 .dairy, .stables {
   margin: 8px 0 0 5px;
 }
@@ -148,16 +130,12 @@ tr.thumbs td a img {
 #games-room {
   margin: 30px 10px 0 0;
 }
-/*--------------------------------------------------------------------------**/
 
 
-
-/** THINGS TO DO */
+/* THINGS TO DO */
 #pic {
   margin: 0 0 10px 20px;
 }
-/*--------------------------------------------------------------------------**/
-
 
 
 /* FARMS AND HABITATS */
