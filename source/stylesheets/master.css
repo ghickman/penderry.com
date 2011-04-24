@@ -290,7 +290,7 @@ p.art {
 }
 /*--------------**/
 
-/** Errors */
+/* Errors */
 .error {
   float: right;
   margin: 0;
@@ -308,9 +308,8 @@ p.art {
   padding: 0;
   text-align: center;
 }
-/*--------------**/
 
-/** Directions */
+/* Directions */
 #location {
   margin: 30px 0 0;
 }
@@ -334,11 +333,9 @@ p.art {
 #powells {
   margin-top: 20px;
 }
-/*--------------------------------------------------------------------------**/
 
 
-
-/** FOOTER */
+/* FOOTER */
 #footer {
   background: #6ebe7a;
   height: 30px;
@@ -356,4 +353,3 @@ p.art {
   color: #FFF;
   text-decoration: underline;
 }
-/*--------------------------------------------------------------------------**/
