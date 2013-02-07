@@ -1,4 +1,3 @@
-cache
-site
-log
-source/_includes/artwork.html
+output
+pelican.pid
+srv.pid

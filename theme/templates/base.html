@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>{% block title %}{{ SITENAME }}{% endblock %}</title>
+
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="{{ SITEURL }}/theme/styles/normalize.css">
+    <link rel="stylesheet" type="text/css" href="{{ SITEURL }}/theme/styles/main.css">
+    <link rel="alternate" type="application/atom+xml" href="{{ FEED_DOMAIN }}/{{ FEED_ALL_ATOM }}" title="{{ SITENAME }} Atom Feed">
+
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+    <meta name="author" content="George Hickman">
+    <meta name="description" content="Penderry is a traditional welsh farm house with two holiday cottages attached, lies in a unique patch of Pembrokeshire countryside, only 10 minutes drive from the bustling little town of Narberth in Wales.">
+    <meta name="google-site-verification" content="-Dc_Spbzf0ntfqbPWK8AJclFJp23jKipfBFgh4W6_IY">
+    <meta name="keywords" content="penderry farm, penderry farm wales, penderry wales, penderry, farm, forest schools, forest, schools, holiday cottages, holiday, cottages, pembrokeshire, narberth, art, wales, tina lewis, tina, lewis, stables, dairy, wildlife, woodland">
+    <meta name="robots" content="ALL">
+
+    {% block extra_script %}{% endblock %}
+</head>
+
+<body class="{% block page_title %}{% endblock %}">
+    <header></header>
+    <nav>
+        <ul>
+            <li id="home" class="menu_item"><a href="/">Home</a></li>
+            <li id="cottages" class="menu_item"><a href="/holiday_cottages.html">Holiday Cottages</a></li>
+            <li id="things" class="menu_item"><a href="/things_to_do.html">Things To Do</a></li>
+            <li id="farm" class="menu_item"><a href="/farm_and_habitats.html">Farm and Habitats</a></li>
+            <li id="art" class="menu_item"><a href="/art_projects.html">Art Projects</a></li>
+            <li id="paintings" class="menu_item"><a href="/tina_lewis_paintings.html">Tina Lewis' Paintings</a></li>
+            <li id="contact" class="menu_item"><a href="/contact.html">Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <div id="content">{% block content %}{% endblock %}</div>
+
+    <footer>
+        <p id="created-by">Created by <a href="http://ghickman.co.uk">George Hickman</a></p>
+    </footer>
+
+    {% include "analytics.html" %}
+</body>
+</html>

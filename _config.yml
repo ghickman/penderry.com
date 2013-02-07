@@ -1,8 +1,0 @@
-haml:
-  format: :html5
-markdown: rdiscount
-source: source
-destination: site
-
-permalink: /:title.html
-blog_title: Penderry Farm

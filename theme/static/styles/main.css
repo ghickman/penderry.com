@@ -59,7 +59,7 @@ p {
 
 
 /* HEADER */
-#header {
+header {
   background: url(https://s3-eu-west-1.amazonaws.com/penderry/header.jpg) no-repeat center center;
   height: 150px;
   margin: auto;
@@ -68,8 +68,8 @@ p {
 
 
 /* MENU */
-#menu ul {
-  background: url(/images/menu_banner.png) repeat-x center center;
+nav ul {
+  background: url(/theme/images/menu_banner.png) repeat-x center center;
   height: 30px;
   margin: 0 0 10px 0;
 }
@@ -92,9 +92,9 @@ p {
   text-decoration: none;
 }
 
-#menu a:hover, #home #home a, #cottages #cottages a, #things #things a,
-#farm #farm a, #art #art a, #paintings #paintings a, #contact #contact a {
-  background: url(/images/menu_hover.png) repeat-x top center;
+nav a:hover, .home #home a, .cottages #cottages a, .things #things a,
+.farm #farm a, .art #art a, .paintings #paintings a, .contact #contact a {
+  background: url(/theme/images/menu_hover.png) repeat-x top center;
 }
 
 
@@ -306,7 +306,7 @@ p.art {
 
 
 /* FOOTER */
-#footer {
+footer {
   background: #6ebe7a;
   height: 30px;
   margin: 10px 0 0;
