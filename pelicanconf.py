@@ -9,7 +9,7 @@ DEFAULT_PAGINATION = False
 
 DISPLAY_PAGES_ON_MENU = True
 
-SITENAME = u'Penderry.com'
+SITENAME = u'Penderry Farm'
 
 TEMPLATE_PAGES = {
     'holiday_cottages.html': 'holiday_cottages.html',
