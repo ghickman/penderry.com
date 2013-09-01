@@ -9,7 +9,7 @@
 <div class="photos">
     {% for painting in PAINTINGS %}
     <a class="painting fancybox" rel="group" href="{{ IMAGE_URL }}{{ painting.name }}.jpg" title="{{ painting.alt }}">
-        <img src="{{ IMAGE_URL }}{{ painting.name }}_s.jpg" alt="{{ painting.alt }}" />
+        <img src="{{ IMAGE_URL }}{{ painting.name }}_thumb.jpg" alt="{{ painting.alt }}" />
     </a>
     {% endfor %}
     <div class="clr"></div>
