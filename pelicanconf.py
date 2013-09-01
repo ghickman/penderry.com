@@ -53,8 +53,8 @@ names = [
     'Tina Lewis June 12 4',
     'Tina Lewis Oct 07 1',
     'Tina Lewis Oct 07 2',
-    'Tina Lewis Oct 11. 2Jpeg',
     'Tina Lewis Oct 11 1',
+    'Tina Lewis Oct 11 2',
     'Tina Lewis Oct 11 3',
     'Tina Lewis Opium Poppies',
 ]
