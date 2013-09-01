@@ -6,13 +6,12 @@
 
 {% block content %}
 <p>Tina has been inspired by Penderry and it&apos;s huge variety of habitats for many years, and the farm has been the basis for many painting exhibitions. Having run her own gallery in Kent, Tina now shows her drawings, water colours and oil paintings in local Pembrokeshire galleries, and is widely collected.</p>
-<div class="flickr_photos">
+<div class="photos">
     {% for painting in PAINTINGS %}
-    <a class="painting fancybox" rel="group" href="{{ painting.url }}.jpg" title="{{ painting.alt }}">
-        <img src="{{ painting.url }}_s.jpg" alt="{{ painting.alt }}" />
+    <a class="painting fancybox" rel="group" href="{{ IMAGE_URL }}{{ painting.name }}.jpg" title="{{ painting.alt }}">
+        <img src="{{ IMAGE_URL }}{{ painting.name }}_s.jpg" alt="{{ painting.alt }}" />
     </a>
     {% endfor %}
     <div class="clr"></div>
 </div>
 {% endblock content %}
-

@@ -60,7 +60,7 @@ p {
 
 /* HEADER */
 header {
-  background: url(https://s3-eu-west-1.amazonaws.com/penderry/header.jpg) no-repeat center center;
+  background: url(/theme/images/header.jpg) no-repeat center center;
   height: 150px;
   margin: auto;
   padding: 10px 0;
@@ -92,7 +92,7 @@ nav ul {
   text-decoration: none;
 }
 
-nav a:hover, .home #home a, .cottages #cottages a, .things #things a,
+nav a:hover, .home #home a, .cottage #cottage a, .things #things a,
 .farm #farm a, .art #art a, .paintings #paintings a, .contact #contact a {
   background: url(/theme/images/menu_hover.png) repeat-x top center;
 }
@@ -118,7 +118,7 @@ tr.thumbs td a img {
 }
 
 
-/* HOLIDAY COTTAGES */
+/* HOLIDAY COTTAGE */
 .dairy, .stables {
   margin: 8px 0 0 5px;
 }
