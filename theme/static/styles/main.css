@@ -57,6 +57,10 @@ p {
   width: 100% !important;
 }
 
+a.fancybox {
+    text-decoration: none;
+}
+
 
 /* HEADER */
 header {
@@ -131,6 +135,11 @@ tr.thumbs td a img {
   margin: 30px 10px 0 0;
 }
 
+img.stables {
+  max-height: 180px;
+  max-width: 235px;
+}
+
 
 /* THINGS TO DO */
 #pic {
@@ -170,21 +179,18 @@ tr.thumbs td a img {
 
 
 /* ART PROJECTS */
+div.right {
+    margin-left: 10px;
+}
+
+div.left {
+    margin-right: 10px;
+}
+
 img.art {
-  margin: 0 0 10px;
-}
-
-img.art.left {
-  margin-right: 10px;
-}
-
-img.art.right {
-  margin-left: 10px;
-}
-
-.outside {
-  width: 235px;
   height: 180px;
+  margin: 0 0 10px;
+  width: 235px;
 }
 
 p.art {
