@@ -44,8 +44,8 @@ devserver:
 publish:
 	$(PELICAN) $(INPUTDIR) -o $(OUTPUTDIR) -s $(PUBLISHCONF) $(PELICANOPTS)
 
-s3: clean html
-	s3cmd sync $(OUTPUTDIR)/* S3://$(S3_BUCKET)
+deploy: clean html
+	s3cmd sync $(OUTPUTDIR)/* S3://$(S3_BUCKET) --cf-invalidate
 	@echo 'Published $(S3_BUCKET)'
 
 .PHONY: html help clean regenerate serve devserver publish ssh_upload rsync_upload dropbox_upload ftp_upload github
