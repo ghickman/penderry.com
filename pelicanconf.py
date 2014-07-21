@@ -11,7 +11,7 @@ DISPLAY_PAGES_ON_MENU = True
 
 IMAGE_URL = '/theme/images/'
 
-SITENAME = u'Penderry Farm'
+SITENAME = u'Penderry'
 
 TEMPLATE_PAGES = {
     'holiday_cottage.html': 'holiday_cottage.html',
