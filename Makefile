@@ -19,7 +19,7 @@ help:
 	@echo '   make publish                     generate using production settings '
 	@echo '   make serve                       serve site at http://localhost:8000'
 	@echo '   make devserver                   start/restart develop_server.sh    '
-	@echo '   make s3                          upload the web site via s3cmd      '
+	@echo '   make deploy                      upload the web site via s3cmd      '
 	@echo '                                                                       '
 
 
