@@ -1,0 +1,2 @@
+static: make watch
+web: sh -c 'cd output && python -m SimpleHTTPServer'

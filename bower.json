@@ -1,0 +1,21 @@
+{
+  "name": "penderry.com",
+  "version": "0.0.1",
+  "homepage": "http://penderry.com",
+  "authors": [
+    "George Hickman <george@ghickman.co.uk>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.3.4",
+    "fancybox": "~2.1.5",
+    "jquery": "~2.1.3"
+  }
+}

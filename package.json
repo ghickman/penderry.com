@@ -1,0 +1,10 @@
+{
+  "name": "penderry.com",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ghickman/penderry.com"
+  },
+  "dependencies": {
+    "bower": "*"
+  }
+}

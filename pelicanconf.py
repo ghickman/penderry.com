@@ -9,6 +9,8 @@ DEFAULT_PAGINATION = False
 
 DISPLAY_PAGES_ON_MENU = True
 
+FEED_DOMAIN = 'http://penderry.com'
+
 IMAGE_URL = '/theme/images/'
 
 SITENAME = u'Penderry Farm'
