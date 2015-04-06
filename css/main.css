@@ -64,7 +64,7 @@ a.fancybox {
 
 /* HEADER */
 header {
-  background: url(/theme/images/header.jpg) no-repeat center center;
+  background: url(/img/header.jpg) no-repeat center center;
   height: 150px;
   margin: auto;
   padding: 10px 0;
@@ -73,7 +73,7 @@ header {
 
 /* MENU */
 nav ul {
-  background: url(/theme/images/menu_banner.png) repeat-x center center;
+  background: url(/img/menu_banner.png) repeat-x center center;
   height: 30px;
   margin: 0 0 10px 0;
 }
@@ -98,7 +98,7 @@ nav ul {
 
 nav a:hover, .home #home a, .cottage #cottage a, .things #things a,
 .farm #farm a, .art #art a, .paintings #paintings a, .contact #contact a {
-  background: url(/theme/images/menu_hover.png) repeat-x top center;
+  background: url(/img/menu_hover.png) repeat-x top center;
 }
 
 

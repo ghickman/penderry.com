@@ -24,18 +24,18 @@ clean:
 build: clean
 	$(PELICAN) $(INPUTDIR) -o $(OUTPUTDIR) -s $(CONFFILE)
 	@cat \
-		theme/static/styles/normalize.css \
+		css/normalize.css \
 		bower_components/fancybox/source/jquery.fancybox.css \
 		bower_components/fancybox/source/helpers/jquery.fancybox-buttons.css \
 		bower_components/fancybox/source/helpers/jquery.fancybox-thumbs.css \
-		theme/static/styles/main.css \
+		css/main.css \
 		> output/main.css && \
 		sed -i '' -e 's/fancybox_/\/img\/fancybox_/' -e 's/blank.gif/\/img\/blank.gif/' output/main.css && \
 		echo 'Built CSS'
 	@mkdir -p output/img && \
-		cp theme/static/images/favicon.ico output/img/ && \
-		cp theme/static/images/*.jpg output/img/ && \
-		cp theme/static/images/*.png output/img/ && \
+		cp img/favicon.ico output/ && \
+		cp img/*.jpg output/img/ && \
+		cp img/*.png output/img/ && \
 		cp bower_components/fancybox/source/*.gif output/img/ && \
 		cp bower_components/fancybox/source/*.png output/img/ && \
 		echo 'Built Images'
@@ -60,6 +60,6 @@ setup:
 	bower install
 
 watch:
-	watchmedo shell-command -RDWc 'make build' content/ theme/ bower_components/
+	watchmedo shell-command -RDWc 'make build' content/ css/ img/ templates/ bower_components/
 
 .PHONY: help clean build deploy run serve watch

@@ -11,7 +11,7 @@ DISPLAY_PAGES_ON_MENU = True
 
 FEED_DOMAIN = 'http://penderry.com'
 
-IMAGE_URL = '/theme/images/'
+IMAGE_URL = '/img/'
 
 SITENAME = u'Penderry'
 
