@@ -19,6 +19,7 @@ TEMPLATE_PAGES = {
     'holiday_cottage.html': 'holiday_cottage.html',
     'things_to_do.html': 'things_to_do.html',
     'farm_and_habitats.html': 'farm_and_habitats.html',
+    'lambing.html': 'lambing.html',
     'art_projects.html': 'art_projects.html',
     'tina_lewis_paintings.html': 'tina_lewis_paintings.html',
     'contact.html': 'contact.html',
