@@ -60,6 +60,6 @@ setup:
 	bower install
 
 watch:
-	watchmedo shell-command -RDWc 'make build' content/ css/ img/ templates/ bower_components/
+	watchmedo shell-command -RDWc 'make build' content/ css/ img/ theme/templates/ bower_components/
 
 .PHONY: help clean build deploy run serve watch
