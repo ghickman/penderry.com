@@ -1,11 +1,4 @@
-PELICAN=pelican
-PELICANOPTS=
-
-BASEDIR=$(CURDIR)
-INPUTDIR=$(BASEDIR)/content
-OUTPUTDIR=$(BASEDIR)/output
-CONFFILE=$(BASEDIR)/pelicanconf.py
-PUBLISHCONF=$(BASEDIR)/publishconf.py
+OUTPUTDIR=$(CURDIR)/output
 
 help:
 	@echo 'Makefile for penderry.com'
@@ -22,7 +15,7 @@ clean:
 	find $(OUTPUTDIR) -mindepth 1 -delete
 
 build: clean
-	$(PELICAN) $(INPUTDIR) -o $(OUTPUTDIR) -s $(CONFFILE)
+	@bin/build && echo 'Built Templates'
 	@cat \
 		css/normalize.css \
 		bower_components/fancybox/source/jquery.fancybox.css \
@@ -48,7 +41,7 @@ build: clean
 
 deploy: clean build
 	s3cmd sync $(OUTPUTDIR)/* S3://penderry.com --cf-invalidate --delete-removed
-	@echo 'Published $(S3_BUCKET)'
+	@echo 'Published penderry.com'
 
 run:
 	@foreman start -f Procfile.dev
@@ -60,6 +53,6 @@ setup:
 	bower install
 
 watch:
-	watchmedo shell-command -RDWc 'make build' content/ css/ img/ theme/templates/ bower_components/
+	watchmedo shell-command -RDWc 'make build' bin/ css/ img/ templates/ bower_components/
 
 .PHONY: help clean build deploy run serve watch

@@ -1,0 +1,32 @@
+#!/usr/bin/env python
+
+import glob
+import os
+
+from jinja2 import Environment, FileSystemLoader
+
+
+CWD = os.getcwd()
+OUTPUT_DIR = os.path.join(CWD, 'output')
+
+
+def build_painting(filename):
+    name, ext = os.path.splitext(filename)
+    data = {
+        'alt': name,
+        'name': filename,
+        'thumb': '{}_thumb{}'.format(name, ext),
+    }
+    return data
+
+paths = filter(lambda x: 'thumb' not in x, glob.iglob('img/tina_lewis_*.jpg'))
+files = map(lambda x: os.path.split(x)[1], paths)
+PAINTINGS = [build_painting(x) for x in files]
+
+env = Environment(loader=FileSystemLoader('templates'))
+t_kwargs = {'tina_lewis_paintings.html': {'PAINTINGS': PAINTINGS}}
+pages = filter(lambda x: x != 'base.html', os.listdir('templates'))
+for template in pages:
+    page = env.get_template(os.path.split(template)[1])
+    with open(os.path.join(OUTPUT_DIR, template), 'w') as f:
+        f.write(page.render(**t_kwargs.get(template, {})).encode('utf-8'))
