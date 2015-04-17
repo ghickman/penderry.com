@@ -12,7 +12,7 @@ help:
 	@echo ''
 
 clean:
-	find $(OUTPUTDIR) -mindepth 1 -delete
+	@find $(OUTPUTDIR) -mindepth 1 -delete && echo 'Cleaned Output'
 
 build: clean
 	@bin/build && echo 'Built Templates'
