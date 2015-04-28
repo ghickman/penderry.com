@@ -4,11 +4,11 @@ help:
 	@echo 'Makefile for penderry.com'
 	@echo ''
 	@echo 'Usage:'
-	@echo '   make clean                       remove the generated files'
-	@echo '   make build                       (re)generate the web site'
-	@echo '   make deploy                      upload the web site via s3cmd'
-	@echo '   make setup                       upload the web site via s3cmd'
-	@echo '   make watch                       start/restart develop_server.sh'
+	@echo '   make clean                       clean the build directory'
+	@echo '   make build                       build the site'
+	@echo '   make deploy                      deploy to s3 and invalidate CF distro'
+	@echo '   make setup                       set up dev environment'
+	@echo '   make watch                       rebuild the site when changes are detected'
 	@echo ''
 
 clean:
