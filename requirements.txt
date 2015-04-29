@@ -1,3 +1,4 @@
+jinja2==2.7.3
 pillow
 s3cmd
 watchdog
