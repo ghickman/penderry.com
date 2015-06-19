@@ -37,6 +37,7 @@ build: clean
 		bower_components/fancybox/source/helpers/jquery.fancybox-buttons.js \
 		bower_components/fancybox/source/helpers/jquery.fancybox-media.js \
 		bower_components/fancybox/source/helpers/jquery.fancybox-thumbs.js \
+		js/main.js \
 		> output/main.js && echo 'Built JS'
 
 deploy: clean build
@@ -53,6 +54,6 @@ setup:
 	bower install
 
 watch:
-	watchmedo shell-command -RDWc 'make build' bin/ css/ img/ templates/ bower_components/
+	watchmedo shell-command -RDWc 'make build' bin/ css/ img/ js/ templates/ bower_components/
 
 .PHONY: help clean build deploy run serve watch
