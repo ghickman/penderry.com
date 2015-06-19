@@ -1,0 +1,10 @@
+<div class="photos">
+    {% for painting in PAINTINGS %}
+    <a class="painting fancybox" rel="group" href="/img/{{ painting.name }}">
+        <img src="/img/{{ painting.thumb }}" alt="{{ painting.alt }}" />
+    </a>
+    {% endfor %}
+</div>
+
+<h1>Tina Lewis' Paintings</h1>
+<p>Tina has been inspired by Penderry and it's huge variety of habitats for many years, and the farm has been the basis for many painting exhibitions. Having run her own gallery in Kent, Tina now shows her drawings, water colours and oil paintings in local Pembrokeshire galleries, and is widely collected.</p>
