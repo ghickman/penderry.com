@@ -19,22 +19,28 @@
 
 <body>
   <header>
+    <p>
+      Welcome to Penderry –<br />
+      A traditional Welsh farmhouse<br />
+      set in a unique patch of countryside<br />
+      in the Lampeter Vale
+    </p>
     <img alt="header-image" src="" />
   </header>
 
   <nav>
     <ul>
-      <li id="about"><a href="/about.html">About</a></li>
-      <li id="cottage"><a href="/cottage.html">The Cottage</a></li>
-      <li id="things"><a href="/things.html">Things to Do</a></li>
-      <li id="art"><a href="/art.html">Art Projects</a></li>
-      <li id="paintings"><a href="/paintings.html">Tina's Paintings</a></li>
-      <li id="contact"><a href="/contact.html">Contact</a></li>
+      <li class="about"><a href="/about.html">About</a></li>
+      <li class="cottage"><a href="/cottage.html">The Cottage</a></li>
+      <li class="things"><a href="/things.html">Things to Do</a></li>
+      <li class="art"><a href="/art.html">Art Projects</a></li>
+      <li class="paintings"><a href="/paintings.html">Tina's Paintings</a></li>
+      <li class="contact"><a href="/contact.html">Contact</a></li>
     </ul>
   </nav>
 
   <div id="content">
-    <div id="wrap">
+    <div class="wrap">
       <section id="about">
         {% include 'about.html' %}
       </section>
@@ -62,9 +68,11 @@
   </div>
 
   <footer>
+    <div class="wrap">
       <p>Thank you for visiting!</p>
-      <p>© Penderry 2015</p>
-      <p id="created-by">Created by <a href="http://ghickman.co.uk">George Hickman</a></p>
+      <p id="copyright">© Penderry 2015</p>
+      <p><em>Created by</em> <a href="http://ghickman.co.uk">George Hickman</a></p>
+    </div>
   </footer>
 
   <script type="text/javascript">
