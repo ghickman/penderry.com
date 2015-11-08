@@ -27,7 +27,6 @@ build: clean
 	@mkdir -p output/img && \
 		cp img/favicon.ico output/ && \
 		cp img/*.jpg output/img/ && \
-		cp img/*.png output/img/ && \
 		echo 'Built Images'
 	@cat \
 		bower_components/flickity/dist/flickity.pkgd.min.js \
