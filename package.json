@@ -5,7 +5,7 @@
     "url": "https://github.com/ghickman/penderry.com"
   },
   "dependencies": {
-    "bower": "*",
+    "bower": "^1.6.5",
     "cssmin": "^0.4.3",
     "uglify-js": "^2.5.0"
   }
