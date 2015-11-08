@@ -83,13 +83,25 @@
 }
 
 body {
-    margin: 0 auto;
-    width: 1000px
+    color: #333333;
+}
+body a {
+    color: #333333;
+    text-decoration: none;
 }
 
 header {
-    height: 930px;
     background: blue;
+    font-family: 'infiniregular';
+    height: 930px;
+}
+
+header p {
+    color: white;
+    font-size: 48px;
+    margin: 0 auto;
+    padding-top: 85px;
+    width: 866px;
 }
 
 nav, #content {
@@ -97,7 +109,8 @@ nav, #content {
 }
 
 nav {
-    background-color: grey;
+    background-color: white;
+    border-bottom: 1px solid grey;
     height: 100px;
     z-index: 150;
 }
@@ -105,29 +118,148 @@ nav {
 nav.scrolled {
     position: fixed;
     top: 0;
-    width: 1000px
+    width: 100%;
 }
 
 nav ul {
-    margin: 0;
+    margin: 0 auto;
+    padding: 0;
+    width: 866px;
 }
 
 nav ul li {
     display: inline-block;
-    margin: 41px 0;
+    margin: 41px 31px;
 }
 
 nav ul li a {
-    color: black;
-    text-decoration: none;
+    font-family: 'gandhi_sansregular';
+    font-size: 16px;
+    padding: 5px 0;
 }
 
 nav ul li#about a {
     border-bottom: 2px solid black;
 }
 
+nav.scrolled + #content {
+    padding-top: 100px;
+}
 
-#wrap {
+section {
+    margin-bottom: 60px;
+}
+
+.wrap {
     margin: 0 auto;
     width: 570px;
 }
+
+h1 {
+    font-family: 'infiniregular';
+    font-size: 28px;
+    line-height: 120%;
+    margin: 65px 0;
+}
+
+h2 {
+    font-family: 'gandhi_sansbold';
+    font-size: 17px;
+    line-height: 170%;
+    margin: 45px 0;
+}
+
+p {
+    font-family: 'gandhi_sansregular';
+    font-size: 17px;
+    line-height: 170%;
+}
+
+p.intro {
+    font-size: 21px;
+}
+
+figure {
+    margin: 52px 0 45px;
+}
+
+figure img {
+    margin: 0 auto;
+    max-height: 333px;
+    max-width: 500px;
+}
+
+figcaption {
+    font-family: 'gandhi_sansitalic';
+    font-size: 17px;
+    margin-top: 25px;
+    text-align: center;
+}
+
+#cottage a {
+    border: 1px solid #333333;
+    border-radius: 5px;
+    display: block;
+    font-size: 15px;
+    margin: 65px auto 0;
+    padding: 9px 0 10px;
+    text-align: center;
+    text-transform: uppercase;
+    width: 111px;
+}
+
+#things ul {
+    padding: 0;
+}
+#things ul li {
+    line-height: 170%;
+    list-style: none;
+}
+#things ul li a {
+    font-family: 'gandhi_sansbold';
+}
+
+#contact p:first-child {
+    margin-bottom: 52px;
+}
+#contact h2 {
+    margin-bottom: 10px;
+    margin-top: 36px;
+}
+#contact #address p,
+#contact #email p,
+#contact #phone p {
+    font-size: 21px;
+}
+#contact iframe {
+    margin-top: 46px;
+}
+
+footer {
+    background-color: #333333;
+    color: white;
+    height: 105px;
+    margin-top: 140px;
+    padding: 75px 0 60px;
+    text-align: center;
+}
+footer p {
+    line-height: 120%;
+}
+footer p:first-child {
+    font-family: 'infiniregular';
+    font-size: 28px;
+    margin-bottom: 30px;
+}
+footer #copyright {
+    font-family: 'infiniregular';
+    margin-bottom: 25px;
+}
+footer em {
+    font-family: 'infiniitalic';
+}
+footer a {
+    color: white;
+    font-family: 'infinibold';
+}
+
