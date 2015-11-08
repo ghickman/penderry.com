@@ -17,6 +17,7 @@ clean:
 build: clean
 	@bin/build && echo 'Built Templates'
 	@cat \
+		css/reset.css \
 		css/normalize.css \
 		bower_components/flickity/dist/flickity.min.css \
 		css/main.css \
