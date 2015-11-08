@@ -6,6 +6,7 @@
   },
   "dependencies": {
     "bower": "*",
-    "cssmin": "^0.4.3"
+    "cssmin": "^0.4.3",
+    "uglify-js": "^2.5.0"
   }
 }

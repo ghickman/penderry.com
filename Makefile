@@ -32,6 +32,7 @@ build: clean
 	@cat \
 		bower_components/flickity/dist/flickity.pkgd.min.js \
 		js/main.js \
+		| uglifyjs --screw-ie8 \
 		> output/main.js && echo 'Built JS'
 	@cp -R static/fonts output/ && \
 		echo 'Built Fonts'
