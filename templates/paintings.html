@@ -1,9 +1,7 @@
-<div class="photos">
-    {% for painting in PAINTINGS %}
-    <a class="painting fancybox" rel="group" href="/img/{{ painting.name }}">
-        <img src="/img/{{ painting.thumb }}" alt="{{ painting.alt }}" />
-    </a>
-    {% endfor %}
+<div class="gallery">
+  {% for painting in paintings %}
+  <div><img class="gallery-cell" data-flickity-lazyload="/img/{{ painting.name }}" /></div>
+  {% endfor %}
 </div>
 
 <h1>Tina Lewis' Paintings</h1>

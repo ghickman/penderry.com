@@ -15,7 +15,6 @@ def build_painting(filename):
     data = {
         'alt': name,
         'name': filename,
-        'thumb': '{}_thumb{}'.format(name, ext),
     }
     return data
 

@@ -4,12 +4,17 @@ $(document).ready(function () {
     var header_height = $('header').height();
 
     $(window).scroll(function () {
-        console.log($(this).scrollTop());
-        console.log(header_height);
         if ($(this).scrollTop() > header_height) {
             nav_element.addClass(scrolled_class);
         } else {
             nav_element.removeClass(scrolled_class);
         }
+    });
+
+    $('.gallery').flickity({
+        imagesLoaded: true,
+        pageDots: false,
+        // lazyLoad: true,
+        wrapAround: true,
     });
 });

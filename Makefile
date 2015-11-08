@@ -18,25 +18,17 @@ build: clean
 	@bin/build && echo 'Built Templates'
 	@cat \
 		css/normalize.css \
-		bower_components/fancybox/source/jquery.fancybox.css \
-		bower_components/fancybox/source/helpers/jquery.fancybox-buttons.css \
-		bower_components/fancybox/source/helpers/jquery.fancybox-thumbs.css \
+		bower_components/flickity/dist/flickity.min.css \
 		css/main.css \
 		> output/main.css && \
-		sed -i '' -e 's/fancybox_/\/img\/fancybox_/' -e 's/blank.gif/\/img\/blank.gif/' output/main.css && \
 		echo 'Built CSS'
 	@mkdir -p output/img && \
 		cp img/favicon.ico output/ && \
 		cp img/*.jpg output/img/ && \
 		cp img/*.png output/img/ && \
-		cp bower_components/fancybox/source/*.gif output/img/ && \
-		cp bower_components/fancybox/source/*.png output/img/ && \
 		echo 'Built Images'
 	@cat \
-		bower_components/fancybox/source/jquery.fancybox.js \
-		bower_components/fancybox/source/helpers/jquery.fancybox-buttons.js \
-		bower_components/fancybox/source/helpers/jquery.fancybox-media.js \
-		bower_components/fancybox/source/helpers/jquery.fancybox-thumbs.js \
+		bower_components/flickity/dist/flickity.pkgd.min.js \
 		js/main.js \
 		> output/main.js && echo 'Built JS'
 
