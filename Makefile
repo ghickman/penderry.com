@@ -31,6 +31,8 @@ build: clean
 		bower_components/flickity/dist/flickity.pkgd.min.js \
 		js/main.js \
 		> output/main.js && echo 'Built JS'
+	@cp -R static/fonts output/ && \
+		echo 'Built Fonts'
 
 deploy: clean build
 	s3cmd sync $(OUTPUTDIR)/* S3://penderry.com --cf-invalidate --delete-removed
@@ -46,6 +48,6 @@ setup:
 	bower install
 
 watch:
-	watchmedo shell-command -RDWc 'make build' bin/ css/ img/ js/ templates/ bower_components/
+	watchmedo shell-command -RDWc 'make build' bin/ css/ img/ js/ static/ templates/ bower_components/
 
 .PHONY: help clean build deploy run serve watch
