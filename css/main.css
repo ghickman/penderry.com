@@ -263,3 +263,23 @@ footer a {
     font-family: 'infinibold';
 }
 
+.gallery {
+    margin: 39px auto 62px;
+    width: 500px;
+}
+.gallery-cell {
+    margin-right: 10px;
+}
+.flickity-prev-next-button {
+    background-color: transparent;
+}
+.flickity-prev-next-button.next {
+    right: -53px;
+}
+.flickity-prev-next-button.previous {
+    left: -45px;
+}
+.flickity-prev-next-button svg {
+    height: 40%;
+    width: 40%;
+}
