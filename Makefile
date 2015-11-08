@@ -29,6 +29,7 @@ build: clean
 		cp img/*.jpg output/img/ && \
 		echo 'Built Images'
 	@cat \
+		bower_components/jquery/dist/jquery.js \
 		bower_components/flickity/dist/flickity.pkgd.min.js \
 		js/main.js \
 		| uglifyjs --screw-ie8 \
