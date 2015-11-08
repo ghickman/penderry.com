@@ -21,6 +21,7 @@ build: clean
 		css/normalize.css \
 		bower_components/flickity/dist/flickity.min.css \
 		css/main.css \
+		| cssmin \
 		> output/main.css && \
 		echo 'Built CSS'
 	@mkdir -p output/img && \
