@@ -28,6 +28,8 @@ build: clean
 	@mkdir -p output/img && \
 		cp img/favicon.ico output/ && \
 		cp img/*.jpg output/img/ && \
+		cp img/*.png output/img/ && \
+		cp img/*.svg output/img/ && \
 		echo 'Built Images'
 	@cat \
 		node_modules/jquery/dist/jquery.js \

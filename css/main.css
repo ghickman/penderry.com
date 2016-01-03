@@ -104,6 +104,12 @@ header p {
     width: 866px;
 }
 
+@media all and (max-width: 866px) {
+    header {
+        display: none;
+    }
+}
+
 nav, #content {
     position: relative;
 }
@@ -115,10 +121,41 @@ nav {
     z-index: 150;
 }
 
+nav.open {
+    height: 100%;
+}
+
 nav.scrolled {
     position: fixed;
     top: 0;
     width: 100%;
+}
+
+nav > a {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+nav.open > a {
+    display: none;
+}
+nav > a img {
+    height: 16px;
+    left: 50%;
+    margin-left: -10px;  /* half the width */
+    margin-top: -8px;  /* half the height */
+    position: relative;
+    top: 50%;
+    width: 20px;
+}
+@media all and (min-width: 866px) {
+    nav > a {
+        display: none;
+    }
+
+    nav ul li:last-child {
+        display: none;
+    }
 }
 
 nav ul {
@@ -127,9 +164,28 @@ nav ul {
     width: 866px;
 }
 
+@media all and (max-width: 866px) {
+    nav ul {
+        display: none;
+        width: 100%;
+    }
+
+    nav.open ul {
+        display: block;
+    }
+}
+
 nav ul li {
     display: inline-block;
     margin: 41px 31px;
+}
+@media all and (max-width: 866px) {
+    nav ul li {
+        display: list-item;
+        margin: 41px 0;
+        text-align: center;
+        width: 100%;
+    }
 }
 
 nav ul li a {
@@ -154,6 +210,11 @@ section {
     margin: 0 auto;
     width: 570px;
 }
+@media all and (max-width: 866px) {
+    .wrap {
+        width: 90%;
+    }
+}
 
 h1 {
     font-family: 'infiniregular';
@@ -177,6 +238,7 @@ p {
 
 p.intro {
     font-size: 21px;
+    margin-bottom: 20px;
 }
 
 figure {
