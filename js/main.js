@@ -1,28 +1,25 @@
 $(document).ready(function () {
     var nav_element = $('nav');
+    var scrolled_class = 'scrolled';
+    var header_height = $('header').height();
 
-    if ($(window).width >= 866) {
-        var scrolled_class = 'scrolled';
-        var header_height = $('header').height();
+    $(window).scroll(function () {
+        if ($(this).scrollTop() > header_height) {
+            nav_element.addClass(scrolled_class);
+        } else {
+            nav_element.removeClass(scrolled_class);
+        }
+    });
 
-        $(window).scroll(function () {
-            if ($(this).scrollTop() > header_height) {
-                nav_element.addClass(scrolled_class);
-            } else {
-                nav_element.removeClass(scrolled_class);
-            }
-        });
-    } else {
-        $('nav > a').click(function () {
-            nav_element.addClass('open');
-            return false;
-        });
+    $('nav > a').click(function () {
+        nav_element.addClass('open');
+        return false;
+    });
 
-        $('nav ul li:last-child').click(function () {
-            nav_element.removeClass('open');
-            return false;
-        });
-    }
+    $('nav ul li:last-child').click(function () {
+        nav_element.removeClass('open');
+        return false;
+    });
 
     // TODO: rebuild menu js menu following for mobile AND desktop
     // desktop: follow after header
