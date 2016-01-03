@@ -5,8 +5,11 @@
     "url": "https://github.com/ghickman/penderry.com"
   },
   "dependencies": {
-    "bower": "^1.6.5",
+    "bootstrap": "^3.3.6",
     "cssmin": "^0.4.3",
+    "flickity": "^1.1.2",
+    "jquery": "^2.1.4",
+    "slick-carousel": "^1.5.9",
     "uglify-js": "^2.5.0"
   }
 }

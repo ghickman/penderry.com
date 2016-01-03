@@ -20,7 +20,7 @@ build: clean
 	@cat \
 		css/reset.css \
 		css/normalize.css \
-		bower_components/flickity/dist/flickity.min.css \
+		node_modules/flickity/dist/flickity.min.css \
 		css/main.css \
 		| cssmin \
 		> output/main.css && \
@@ -30,8 +30,8 @@ build: clean
 		cp img/*.jpg output/img/ && \
 		echo 'Built Images'
 	@cat \
-		bower_components/jquery/dist/jquery.js \
-		bower_components/flickity/dist/flickity.pkgd.min.js \
+		node_modules/jquery/dist/jquery.js \
+		node_modules/flickity/dist/flickity.pkgd.min.js \
 		js/main.js \
 		| uglifyjs --screw-ie8 \
 		> output/main.js && echo 'Built JS'
@@ -49,9 +49,8 @@ setup:
 	direnv allow
 	pip install -r requirements.txt
 	npm install
-	bower install
 
 watch:
-	watchmedo shell-command -RDWc 'make build' bin/ css/ img/ js/ static/ templates/ bower_components/
+	watchmedo shell-command -RDWc 'make build' bin/ css/ img/ js/ static/ templates/ node_modules/
 
 .PHONY: help clean build deploy run serve watch
