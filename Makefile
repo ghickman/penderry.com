@@ -7,6 +7,7 @@ help:
 	@echo '   make clean                       clean the build directory'
 	@echo '   make build                       build the site'
 	@echo '   make deploy                      deploy to s3 and invalidate CF distro'
+	@echo '   make run                         run all jobs'
 	@echo '   make setup                       set up dev environment'
 	@echo '   make watch                       rebuild the site when changes are detected'
 	@echo ''
@@ -42,7 +43,7 @@ deploy: clean build
 	@echo 'Published penderry.com'
 
 run:
-	@forego start -f Procfile.dev
+	@heroku local -f Procfile.dev
 
 setup:
 	direnv allow
