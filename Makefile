@@ -37,7 +37,7 @@ build: clean
 		js/main.js \
 		| uglifyjs --screw-ie8 \
 		> output/main.js && echo 'Built JS'
-	@cp -R static/fonts output/ && \
+	@cp -R fonts output/ && \
 		echo 'Built Fonts'
 
 deploy: clean build
@@ -53,6 +53,6 @@ setup:
 	npm install
 
 watch:
-	watchmedo shell-command -RDWc 'make build' bin/ css/ img/ js/ static/ templates/ node_modules/
+	watchmedo shell-command -RDWc 'make build' bin/ css/ fonts/ img/ js/ templates/ node_modules/
 
 .PHONY: help clean build deploy run serve watch
