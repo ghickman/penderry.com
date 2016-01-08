@@ -279,6 +279,9 @@ figcaption {
 #things ul li a {
     font-family: 'gandhi_sansbold';
 }
+#things ul li a:hover {
+    text-decoration: underline;
+}
 
 #contact p:first-child {
     margin-bottom: 52px;
