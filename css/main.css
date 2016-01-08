@@ -240,8 +240,8 @@ figure {
 }
 
 figure img {
+    display: block;
     margin: 0 auto;
-    max-height: 333px;
     max-width: 500px;
 }
 
@@ -262,6 +262,9 @@ figcaption {
     text-align: center;
     text-transform: uppercase;
     width: 111px;
+}
+#cottage img {
+    max-height: 500px;
 }
 
 #things ul {
@@ -321,10 +324,12 @@ footer a {
 
 .gallery {
     margin: 39px auto 62px;
+    max-height: 500px;
     width: 500px;
 }
 .gallery-cell {
     margin-right: 10px;
+    max-width: 500px;
 }
 .flickity-prev-next-button {
     background-color: transparent;
