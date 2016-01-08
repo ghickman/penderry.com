@@ -91,7 +91,9 @@ body a {
 }
 
 header {
-    background: blue;
+    background-image: url('/img/header.jpg');
+    background-position: 50%;
+    background-repeat: no-repeat;
     font-family: 'infiniregular';
     height: 930px;
 }
