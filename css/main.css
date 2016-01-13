@@ -171,9 +171,8 @@ nav > a img {
 }
 
 nav ul {
-    margin: 0 auto;
     padding: 0;
-    width: 866px;
+    text-align: center;
 }
 
 @media all and (max-width: 866px) {
