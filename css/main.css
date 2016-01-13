@@ -99,16 +99,27 @@ header {
     background-image: url('/img/header.jpg');
     background-position: 50%;
     background-repeat: no-repeat;
-    height: 930px;
+    background-size: cover;
+}
+@media all and (min-width: 866px) {
+    header {
+        height: 930px;
+    }
 }
 
 header p {
     color: white;
     font-family: 'infiniregular';
-    font-size: 48px;
-    margin: 0 auto;
-    padding-top: 85px;
-    width: 866px;
+    padding: 40px;
+}
+
+@media all and (min-width: 866px) {
+    header p {
+        font-size: 48px;
+        margin: 0 auto;
+        padding-top: 85px;
+        width: 866px;
+    }
 }
 
 nav, #content {
