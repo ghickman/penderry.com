@@ -106,13 +106,11 @@ header {
         height: 930px;
     }
 }
-
 header p {
     color: white;
     font-family: 'infiniregular';
     padding: 40px;
 }
-
 @media all and (min-width: 866px) {
     header p {
         font-size: 48px;
@@ -132,17 +130,16 @@ nav {
     height: 100px;
     z-index: 150;
 }
-
 nav.open {
-    height: 410px;
+    /* desktop */
+    /* height: 410px; */
+    height: 100%;
 }
-
 nav.scrolled {
     position: fixed;
     top: 0;
     width: 100%;
 }
-
 nav > a {
     display: block;
     width: 100%;
@@ -160,45 +157,36 @@ nav > a img {
     top: 50%;
     width: 20px;
 }
-@media all and (min-width: 866px) {
-    nav > a {
-        display: none;
-    }
-
-    nav ul li:last-child {
-        display: none;
-    }
-}
-
 nav ul {
+    display: none;
     padding: 0;
     text-align: center;
+    width: 100%;
 }
-
-@media all and (max-width: 866px) {
-    nav ul {
-        display: none;
-        width: 100%;
-    }
-
-    nav.open ul {
-        display: block;
-    }
+nav.open ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-bottom: 21px;
 }
-
 nav ul li {
-    display: inline-block;
-    margin: 41px 31px;
+    display: list-item;
+    margin: 41px 0;
+    text-align: center;
+    width: 100%;
 }
-@media all and (max-width: 866px) {
-    nav ul li {
-        display: list-item;
-        margin: 41px 0;
-        text-align: center;
-        width: 100%;
-    }
-}
-
+/* @media all and (min-width: 866px) { */
+/*     nav ul li { */
+/*         /1* desktop *1/ */
+/*         display: inline-block; */
+/*         margin: 41px 31px; */
+/*     } */
+/* } */
+/* @media all and (min-width: 866px) { */
+/*     nav ul li:last-child { */
+/*         /1* display: none; *1/ */
+/*     } */
+/* } */
 nav ul li a {
     font-family: 'gandhi_sansregular';
     font-size: 16px;
@@ -219,7 +207,9 @@ section {
 
 .wrap {
     margin: 0 auto;
-    width: 570px;
+    /* desktop */
+    /* width: 570px; */
+    width: 90%;
 }
 
 h1 {
@@ -248,13 +238,15 @@ p.intro {
 }
 
 figure {
-    margin: 52px 0 45px;
+    margin-bottom: 45px;
+    margin-top: 52px;
 }
 
-figure img {
+figure > img {
     display: block;
     margin: 0 auto;
-    max-width: 500px;
+    /* max-width: 500px; */
+    max-width: 80%;
 }
 
 figcaption {
@@ -307,6 +299,7 @@ figcaption {
 }
 #contact iframe {
     margin-top: 46px;
+    display: none;
 }
 
 footer {
@@ -340,11 +333,12 @@ footer a {
 .gallery {
     margin: 39px auto 62px;
     max-height: 500px;
-    width: 500px;
+    max-width: 80%;
+    /* width: 500px; */
 }
 .gallery-cell {
     margin-right: 10px;
-    max-width: 500px;
+    max-width: 80%;
 }
 .flickity-prev-next-button {
     background-color: transparent;
