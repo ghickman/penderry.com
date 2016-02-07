@@ -9,6 +9,7 @@
     "cssmin": "^0.4.3",
     "flickity": "^1.1.2",
     "jquery": "^2.1.4",
+    "less": "^2.6.0",
     "slick-carousel": "^1.5.9",
     "uglify-js": "^2.5.0"
   }

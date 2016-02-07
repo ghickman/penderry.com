@@ -17,6 +17,7 @@ clean:
 
 build: clean
 	@bin/build && echo 'Built Templates'
+	@lessc css/main.less > css/main.css
 	@cat \
 		css/reset.css \
 		css/normalize.css \
@@ -24,6 +25,7 @@ build: clean
 		css/main.css \
 		| cssmin \
 		> output/main.css && \
+		rm css/main.css && \
 		echo 'Built CSS'
 	@mkdir -p output/img && \
 		cp img/favicon.ico output/ && \

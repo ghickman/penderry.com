@@ -1,0 +1,237 @@
+@wide-res: 866px;
+@big-images: 500px;
+
+
+@import "typography";
+@import "menu";
+
+
+@viewport {
+  zoom: 1.0;
+  width: extend-to-zoom;
+}
+
+body {
+  color: #333333;
+
+  a {
+    color: #333333;
+    text-decoration: none;
+  }
+}
+
+header {
+  background-image: url('/img/header.jpg');
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  p {
+    color: white;
+    font-family: 'infiniregular';
+    padding: 40px;
+  }
+}
+@media all and (min-width: @wide-res) {
+  header {
+    height: 930px;
+
+    p {
+      font-size: 48px;
+      margin: 0 auto;
+      padding-top: 85px;
+      width: @wide-res;
+    }
+  }
+}
+
+nav, #content {
+  position: relative;
+}
+
+section {
+  margin-bottom: 60px;
+}
+
+.wrap {
+  margin: 0 auto;
+  width: 90%;
+}
+@media all and (min-width: @wide-res) {
+  .wrap {
+    width: 570px;
+  }
+}
+
+h1 {
+  font-family: 'infiniregular';
+  font-size: 28px;
+  line-height: 120%;
+  margin: 65px 0;
+}
+
+h2 {
+  font-family: 'gandhi_sansbold';
+  font-size: 17px;
+  line-height: 170%;
+  margin: 45px 0;
+}
+
+p {
+  font-family: 'gandhi_sansregular';
+  font-size: 17px;
+  line-height: 170%;
+
+  &.intro {
+    font-size: 21px;
+    margin-bottom: 20px;
+  }
+}
+
+figure {
+  margin-bottom: 45px;
+  margin-top: 52px;
+
+  & > img {
+    display: block;
+    margin: 0 auto;
+    max-width: 80%;
+  }
+}
+@media all and (min-width: @wide-res) {
+  figure > img {
+    max-width: @big-images;
+  }
+}
+
+figcaption {
+  font-family: 'gandhi_sansitalic';
+  font-size: 17px;
+  margin-top: 25px;
+  text-align: center;
+}
+
+#cottage {
+  a {
+    border-radius: 5px;
+    border: 1px solid #333333;
+    display: block;
+    font-size: 15px;
+    margin: 65px auto 0;
+    padding: 9px 0 10px;
+    text-align: center;
+    text-transform: uppercase;
+    width: 111px;
+  }
+
+  img {
+    max-height: @big-images;
+  }
+}
+
+#things ul {
+  padding: 0;
+
+  li {
+    line-height: 170%;
+    list-style: none;
+
+    a {
+      font-family: 'gandhi_sansbold';
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
+#contact {
+  p:first-child {
+    margin-bottom: 52px;
+  }
+
+  h2 {
+    margin-bottom: 10px;
+    margin-top: 36px;
+  }
+
+  #address p, #email p, #phone p {
+    font-size: 21px;
+  }
+
+  iframe {
+    display: none;
+  }
+
+  @media all and (min-width: @wide-res) {
+    iframe {
+      margin-top: 46px;
+      display: block;
+    }
+  }
+}
+
+footer {
+  background-color: #333333;
+  color: white;
+  height: 105px;
+  margin-top: 140px;
+  padding: 75px 0 60px;
+  text-align: center;
+
+  footer p {
+    line-height: 120%;
+
+    &:first-child {
+      font-family: 'infiniregular';
+      font-size: 28px;
+      margin-bottom: 30px;
+    }
+  }
+
+  #copyright {
+    font-family: 'infiniregular';
+    margin-bottom: 25px;
+  }
+
+  em {
+    font-family: 'infiniitalic';
+  }
+
+  a {
+    color: white;
+    font-family: 'infinibold';
+  }
+}
+
+.gallery {
+  margin: 39px auto 62px;
+  max-width: 80%;
+}
+.gallery-cell {
+  margin-right: 10px;
+  max-width: 80%;
+}
+.flickity-prev-next-button {
+  background-color: transparent;
+
+  &.next {
+    right: -53px;
+  }
+
+  &.previous {
+    left: -45px;
+  }
+
+  svg {
+    height: 40%;
+    width: 40%;
+  }
+}
+@media all and (min-width: @wide-res) {
+  .gallery {
+    max-height: @big-images;
+    width: @big-images;
+  }
+}
