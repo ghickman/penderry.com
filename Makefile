@@ -44,7 +44,7 @@ deploy: clean build
 	@echo 'Published penderry.com'
 
 run:
-	@foreman start -f Procfile.dev
+	@forego start -f Procfile.dev
 
 setup:
 	direnv allow
