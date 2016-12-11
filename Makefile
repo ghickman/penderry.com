@@ -40,7 +40,7 @@ build: clean
 		> output/main.js && echo 'Built JS'
 
 deploy: clean build
-	s3cmd sync $(OUTPUTDIR)/* S3://penderry.com --cf-invalidate --delete-removed
+	aws s3 sync --acl=public-read --delete $(OUTPUTDIR)/ s3://penderry.com/
 	@echo 'Published penderry.com'
 
 run:
