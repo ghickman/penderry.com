@@ -4,6 +4,7 @@
     <title>Penderry Farm</title>
 
     <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://unpkg.com/tachyons@4.7.0/css/tachyons.min.css"/>
     <link rel="stylesheet" type="text/css" href="/main.css">
 
     <meta http-equiv="Content-type" content="text/html; charset=utf-8">
@@ -17,30 +18,27 @@
     <script type="text/javascript" src="/main.js"></script>
 </head>
 
-<body>
-  <header>
-    <p>
+<body class="gandhi near-black">
+
+  <header class="bg-hero cover pa5 vh-100">
+    <p class="f1 infini lh-title ma0 white">
       Welcome to Penderry –<br />
       A traditional Welsh farmhouse<br />
       set in a unique patch of countryside<br />
       in the Lampeter Vale
     </p>
+
+    <nav class="ph4 nowrap overflow-x-auto bb b--moon-gray bg-white w-100 absolute border-box bottom-0 left-0">
+      {% for item in nav %}
+        <a class="dib near-black link no-underline ma4 bb-hover" href="{{item.url}}">
+          {{item.name}}
+        </a>
+      {% endfor %}
+    </nav>
   </header>
 
-  <nav>
-    <a href=""><img src="img/menu.svg" alt="menu" /></a>
-    <ul>
-      <li class="about"><a href="#about">About</a></li>
-      <li class="cottage"><a href="#cottage">The Cottage</a></li>
-      <li class="things"><a href="#things">Things to Do</a></li>
-      <li class="art"><a href="#art">Art Projects</a></li>
-      <li class="paintings"><a href="#paintings">Tina's Paintings</a></li>
-      <li class="contact"><a href="#contact">Contact</a></li>
-      <li><a href=""><img src="img/close.png" alt="close menu" /></a></li>
-    </ul>
-  </nav>
 
-  <div id="content">
+  <div id="content" class="mw6 center f5 lh-copy">
     <div class="wrap">
       <section id="about">
         {% include 'about.html' %}
@@ -68,7 +66,7 @@
     </div>
   </div>
 
-  <footer>
+  <footer class="bg-dark-gray white">
     <div class="wrap">
       <p>Thank you for visiting!</p>
       <p id="copyright">© Penderry 2015</p>
