@@ -17,13 +17,11 @@ clean:
 
 build: clean
 	@bin/build && echo 'Built Templates'
-	@lessc css/main.less > css/main.css
+	@node_modules/.bin/lessc css/main.less > css/main.css
 	@cat \
-		css/reset.css \
-		css/normalize.css \
 		node_modules/flickity/dist/flickity.min.css \
 		css/main.css \
-		| cssmin \
+		| node_modules/.bin/cssmin \
 		> output/main.css && \
 		rm css/main.css && \
 		echo 'Built CSS'
@@ -37,7 +35,7 @@ build: clean
 		node_modules/jquery/dist/jquery.js \
 		node_modules/flickity/dist/flickity.pkgd.min.js \
 		js/main.js \
-		| uglifyjs --screw-ie8 \
+		| node_modules/.bin/uglifyjs --screw-ie8 \
 		> output/main.js && echo 'Built JS'
 	@cp -R fonts output/ && \
 		echo 'Built Fonts'
