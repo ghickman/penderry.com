@@ -32,7 +32,7 @@ p {
 /*   position: relative; */
 /*   width: 90%; */
 /* } */
-/* @media (min-width: 992px) { */
+/* @media (min-width: 1200px) { */
 /*   .container-fluid { */
 /*     width: 1000px; */
 /*   } */
@@ -53,7 +53,7 @@ header p {
   padding: 40px;
   margin: 0
 }
-@media all and (min-width: 866px) {
+@media (min-width: 1200px) {
   header {
     height: 930px;
   }
@@ -119,7 +119,7 @@ nav.open ul {
   justify-content: space-between;
   padding-bottom: 21px;
 }
-@media all and (min-width: 866px) {  /* desktop res */
+@media (min-width: 1200px) {
   nav ul li {
     display: inline-block;
     margin: 41px 31px;
@@ -160,7 +160,7 @@ figure > img {
   margin: 0 auto;
   max-width: 80%;
 }
-@media all and (min-width: @wide-res) {
+@media (min-width: 1200px) {
   figure > img {
     max-width: 500px;
   }
@@ -237,7 +237,7 @@ figcaption {
 /*   margin: 39px auto 62px; */
 /*   max-width: 80%; */
 /* } */
-/* @media all and (min-width: @wide-res) { */
+/* @media (min-width: 1200px) { */
 /*   .gallery { */
 /*     max-height: 500px; */
 /*     width: 500px; */
