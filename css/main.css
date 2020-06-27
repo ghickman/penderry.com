@@ -281,10 +281,8 @@ footer #copyright {
 footer em {
   font-family: 'infiniitalic';
 }
-footer a {
+footer a,
+footer a:hover{
   color: white;
-}
-footer a:hover {
-  text-decoration: none;
 }
 /* }}} */
