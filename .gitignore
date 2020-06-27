@@ -1,6 +1,3 @@
-output
-pelican.pid
-srv.pid
-
-bower_components
-node_modules
+_exports
+dimensions.py
+raw_images
