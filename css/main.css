@@ -222,12 +222,12 @@ figcaption {
 #contact iframe {
   border: 0;
   height: 450px;
+  margin-top: 1rem;
   width: 100%;
 }
-@media all and (min-width: @wide-res) {
+@media (min-width: 1200px) {
   #contact iframe {
-    margin-top: 46px;
-    display: block;
+    height: 600px;
   }
 }
 /* }}} */
