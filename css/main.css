@@ -12,14 +12,17 @@ h1 {
   font-family: 'infiniregular';
   font-size: 28px;
   line-height: 120%;
-  margin: 65px 0;
+  margin-bottom: 1rem;
 }
 
 h2 {
   font-family: 'gandhi_sansbold';
-  font-size: 17px;
+  font-size: 1.1rem;
   line-height: 170%;
-  margin: 45px 0;
+}
+
+section {
+  margin-bottom: 4rem;
 }
 
 p {
