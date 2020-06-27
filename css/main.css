@@ -1,0 +1,295 @@
+/* Header ------------------------------------------------------------------ {{{ */
+body {
+  color: #333333;
+}
+
+a {
+  color: #333333;
+  text-decoration: none;
+}
+
+h1 {
+  font-family: 'infiniregular';
+  font-size: 28px;
+  line-height: 120%;
+  margin: 65px 0;
+}
+
+h2 {
+  font-family: 'gandhi_sansbold';
+  font-size: 17px;
+  line-height: 170%;
+  margin: 45px 0;
+}
+
+p {
+  font-family: 'gandhi_sansregular';
+  font-size: 17px;
+  line-height: 170%;
+}
+
+/* .container-fluid { */
+/*   position: relative; */
+/*   width: 90%; */
+/* } */
+/* @media (min-width: 992px) { */
+/*   .container-fluid { */
+/*     width: 1000px; */
+/*   } */
+/* } */
+
+/* }}} */
+
+/* Header ------------------------------------------------------------------ {{{ */
+header {
+  background-image: url('/img/header.jpg');
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+header p {
+  color: white;
+  font-family: 'infiniregular';
+  padding: 40px;
+  margin: 0
+}
+@media all and (min-width: 866px) {
+  header {
+    height: 930px;
+  }
+  header p {
+    font-size: 48px;
+    margin: 0 auto;
+    padding-top: 85px;
+    width: 866px;
+  }
+}
+/* }}} */
+
+/* Menu -------------------------------------------------------------------- {{{ */
+nav {
+  background-color: white;
+  border-bottom: 1px solid grey;
+  height: 100px;
+  position: relative;
+  z-index: 150;
+}
+nav ul {
+  display: none;
+  padding: 0;
+  text-align: center;
+  width: 100%;
+}
+nav ul li {
+  margin: 41px 0;
+  text-align: center;
+  width: 100%;
+}
+nav ul li a {
+  font-family: 'gandhi_sansregular';
+  font-size: 16px;
+}
+
+/* hamburger icon */
+nav > a {
+  display: block;
+  width: 100%;
+  height: 100%;
+
+}
+nav.open > a {
+  display: none;
+}
+nav > a img {
+  height: 16px;
+  left: 50%;
+  margin-left: -10px;  /* half the width */
+  margin-top: -8px;  /* half the height */
+  position: relative;
+  top: 50%;
+  width: 20px;
+}
+/* hamburger is open */
+nav.open {
+  height: 100%;
+}
+nav.open ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-bottom: 21px;
+}
+@media all and (min-width: 866px) {  /* desktop res */
+  nav ul li {
+    display: inline-block;
+    margin: 41px 31px;
+  }
+  nav ul li:last-child {
+    /* display: none; */
+  }
+  nav.open {
+    /* height: 410px; */
+  }
+}
+
+/* menu following scroll */
+nav.scrolled {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+nav.scrolled + #content {
+  padding-top: 100px;
+}
+/* }}} */
+
+/* Intro ------------------------------------------------------------------- {{{ */
+p.intro {
+  font-size: 21px;
+  margin-bottom: 20px;
+}
+/* }}} */
+
+/* Pictures ---------------------------------------------------------------- {{{ */
+figure {
+  margin-bottom: 45px;
+  margin-top: 52px;
+}
+figure > img {
+  display: block;
+  margin: 0 auto;
+  max-width: 80%;
+}
+@media all and (min-width: @wide-res) {
+  figure > img {
+    max-width: 500px;
+  }
+}
+
+figcaption {
+  font-family: 'gandhi_sansitalic';
+  font-size: 17px;
+  margin-top: 25px;
+  text-align: center;
+}
+/* }}} */
+
+/* Cottage ----------------------------------------------------------------- {{{ */
+#cottage a {
+  border-radius: 5px;
+  border: 1px solid #333333;
+  display: block;
+  font-size: 15px;
+  margin: 65px auto 0;
+  padding: 9px 0 10px;
+  text-align: center;
+  text-transform: uppercase;
+  width: 111px;
+}
+#cottage img {
+  max-height: 500px;
+}
+/* }}} */
+
+/* Things ------------------------------------------------------------------ {{{ */
+#things ul {
+  padding: 0;
+}
+#things ul li {
+  line-height: 170%;
+  list-style: none;
+}
+#things ul li a {
+  font-family: 'gandhi_sansbold';
+}
+#things ul li a:hover {
+  color: #333333;
+  text-decoration: underline;
+}
+/* }}} */
+
+/* Contact ----------------------------------------------------------------- {{{ */
+#contact p:first-child {
+  margin-bottom: 52px;
+}
+#contact h2 {
+  margin-bottom: 10px;
+  margin-top: 36px;
+}
+#contact #address p, #email p, #phone p {
+  font-size: 21px;
+}
+#contact iframe {
+  border: 0;
+  height: 450px;
+  width: 100%;
+}
+@media all and (min-width: @wide-res) {
+  #contact iframe {
+    margin-top: 46px;
+    display: block;
+  }
+}
+/* }}} */
+
+/* Gallery ----------------------------------------------------------------- {{{ */
+/* .gallery { */
+/*   margin: 39px auto 62px; */
+/*   max-width: 80%; */
+/* } */
+/* @media all and (min-width: @wide-res) { */
+/*   .gallery { */
+/*     max-height: 500px; */
+/*     width: 500px; */
+/*   } */
+/* } */
+/* .gallery-cell { */
+/*   margin-right: 10px; */
+/*   max-width: 80%; */
+/* } */
+/* .flickity-prev-next-button { */
+/*   background-color: transparent; */
+/* } */
+/* .flickity-prev-next-button.next { */
+/*   right: -53px; */
+/* } */
+/* .flickity-prev-next-button.previous { */
+/*   left: -45px; */
+/* } */
+/* .flickity-prev-next-button svg { */
+/*   height: 40%; */
+/*   width: 40%; */
+/* } */
+/* }}} */
+
+/* Footer ------------------------------------------------------------------ {{{ */
+footer {
+  background-color: #333333;
+  color: white;
+  margin-top: 140px;
+  padding: 75px 0 60px;
+  text-align: center;
+}
+footer p {
+  line-height: 120%;
+  margin: 0;
+}
+footer p:first-child {
+  font-family: 'infiniregular';
+  font-size: 28px;
+  margin-bottom: 30px;
+}
+footer #copyright {
+  font-family: 'infiniregular';
+  margin-bottom: 25px;
+}
+footer em {
+  font-family: 'infiniitalic';
+}
+footer a {
+  color: white;
+}
+footer a:hover {
+  text-decoration: none;
+}
+/* }}} */
