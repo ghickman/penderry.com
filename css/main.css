@@ -185,6 +185,18 @@ figcaption {
 #cottage img {
   max-height: 500px;
 }
+#cottage .info {
+  display: flex;
+  justify-content: space-evenly;
+}
+#cottage .info div {
+  display: flex;
+  align-items: center;
+}
+#cottage .info img {
+  height: 20px;
+  margin-right: .75rem;
+}
 /* }}} */
 
 /* Things ------------------------------------------------------------------ {{{ */
