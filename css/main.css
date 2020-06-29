@@ -187,6 +187,7 @@ figcaption {
 }
 #cottage .info {
   display: flex;
+  font-family: 'gandhi_sansregular';
   justify-content: space-evenly;
   margin-bottom: 1rem;
 }
