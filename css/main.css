@@ -186,7 +186,6 @@ figcaption {
   max-height: 500px;
 }
 #cottage .info {
-  display: flex;
   font-family: 'gandhi_sansregular';
   justify-content: space-evenly;
   margin-bottom: 1rem;
@@ -194,6 +193,11 @@ figcaption {
 #cottage .info div {
   display: flex;
   align-items: center;
+}
+@media (min-width: 720px) {
+  #cottage .info div {
+    justify-content: center;
+  }
 }
 #cottage .info img {
   height: 20px;
