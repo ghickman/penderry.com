@@ -25,10 +25,8 @@ $(document).ready(function () {
     // desktop: follow after header
     // mobile: always follow (css only maybe?)
 
-    // $('.main-carousel').flickity({
-    //     // imagesLoaded: true,
-    //     // pageDots: false,
-    //     // lazyLoad: true,
-    //     wrapAround: true,
-    // });
+    $('.main-carousel').flickity({
+        lazyLoad: true,
+        wrapAround: true,
+    });
 });
